@@ -59,11 +59,11 @@
         if (navbar.querySelector(".dropdown.active")) {
           collapseDropdown();
         }
-      }
 
-      menuDropdown.classList.add("active");
-      const dropdownMenu = menuDropdown.querySelector(".dropdown-menu");
-      dropdownMenu.style.maxHeight = dropdownMenu.scrollHeight + "px";
+        menuDropdown.classList.add("active");
+        const dropdownMenu = menuDropdown.querySelector(".dropdown-menu");
+        dropdownMenu.style.maxHeight = dropdownMenu.scrollHeight + "px";
+      }
     }
   });
 })();
