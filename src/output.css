@@ -628,19 +628,6 @@ video {
   white-space: nowrap;
 }
 
-.border-b {
-  border-bottom-width: 1px;
-}
-
-.border-t {
-  border-top-width: 1px;
-}
-
-.border-gray-600 {
-  --tw-border-opacity: 1;
-  border-color: rgb(75 85 99 / var(--tw-border-opacity));
-}
-
 .bg-sky-950 {
   --tw-bg-opacity: 1;
   background-color: rgb(8 47 73 / var(--tw-bg-opacity));
@@ -776,7 +763,7 @@ a {
   position: absolute;
   top: 19.5vh;
   height: 100%;
-  width: 50%;
+  width: 65%;
   /* opacity: 0.95; */
   visibility: hidden;
   transform: translateX(-100%);
@@ -938,10 +925,6 @@ a {
 
   .lg\:justify-end {
     justify-content: flex-end;
-  }
-
-  .lg\:border-none {
-    border-style: none;
   }
 
   .lg\:bg-transparent {
