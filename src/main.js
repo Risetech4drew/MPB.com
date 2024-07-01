@@ -55,13 +55,15 @@
 
       if (menuDropdown.classList.contains("active")) {
         collapseDropdown();
-      } else if (navbar.querySelector(".dropdown.active")) {
-        collapseDropdown();
       } else {
-        menuDropdown.classList.add("active");
-        const dropdownMenu = menuDropdown.querySelector(".dropdown-menu");
-        dropdownMenu.style.maxHeight = dropdownMenu.scrollHeight + "px";
+        if (navbar.querySelector(".dropdown.active")) {
+          collapseDropdown();
+        }
       }
+
+      menuDropdown.classList.add("active");
+      const dropdownMenu = menuDropdown.querySelector(".dropdown-menu");
+      dropdownMenu.style.maxHeight = dropdownMenu.scrollHeight + "px";
     }
   });
 })();
