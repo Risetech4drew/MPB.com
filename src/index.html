@@ -40,62 +40,13 @@
         </div>
       </div>
     </div>
-    <header class="lg:shadow-xl">
-      <nav class="flex justify-between items-center h-16 lg:container mx-0n">
+    <header class="shadow-xl">
+      <div class="flex justify-between items-center h-16 lg:container mx-0">
         <a
           href="#"
           class="text-2xl text-red-700 font-bold tracking-wider whitespace-nowrap z-10 block px-2"
           >MPB</a
         >
-        <ul
-          class="mobile-menu flex flex-col gap-2 lg:flex-row lg:items-center lg:justify-end px-2 pt-[4em] lg:p-0 font-semibold bg-white lg:bg-transparent text-neutral-900 z-0"
-        >
-          <li class="py-2">
-            <a href="#">Home</a>
-          </li>
-          <li
-            class="relative border-t border-b border-gray-600 lg:border-none py-2 dropdown lg:p-0"
-          >
-            <span
-              class="flex items-center justify-between lg:justify-normal cursor-pointer dropdown-item"
-              data-toggle="dropdown-menu"
-              >Catalogue<i
-                class="fa-solid fa-angle-down cursor-pointer lg:ml-2"
-              ></i
-            ></span>
-            <ul class="dropdown-menu flex flex-col gap-2">
-              <li><a href="#">Catalogue option</a></li>
-              <li><a href="#">Catalogue option</a></li>
-              <li><a href="#">Catalogue option</a></li>
-              <li><a href="#">Catalogue option</a></li>
-              <li><a href="#">Catalogue option</a></li>
-              <li><a href="#">Catalogue option</a></li>
-            </ul>
-          </li>
-          <li
-            class="relative border-1 border-b border-gray-600 lg:border-none py-2 dropdown lg:p-0"
-          >
-            <span
-              class="flex items-center justify-between lg:justify-normal cursor-pointer dropdown-item"
-              data-toggle="dropdown-menu"
-              >Services<i
-                class="fa-solid fa-angle-down cursor-pointer lg:ml-2"
-              ></i
-            ></span>
-            <ul class="dropdown-menu flex flex-col gap-2 py-2 px-4">
-              <li>commercial printing</li>
-              <li>embroidery</li>
-              <li>protect equipment</li>
-              <li>promotional material</li>
-            </ul>
-          </li>
-          <li class="border-1 border-b border-gray-600 lg:border-none py-2">
-            <a href="#">About Us</a>
-          </li>
-          <li class="py-2">
-            <a href="#">Contact us</a>
-          </li>
-        </ul>
         <button id="hamburger-el" class="lg:hidden z-20" aria-label="Main Menu">
           <svg width="100" height="50" viewBox="0 0 100 100">
             <path
@@ -109,7 +60,54 @@
             />
           </svg>
         </button>
-      </nav>
+        <nav class="navbar">
+          <ul
+            class="menu flex flex-col gap-2 lg:flex-row lg:items-center lg:justify-end lg:p-0 font-semibold bg-white lg:bg-transparent text-neutral-900 z-0"
+          >
+            <li class="py-2">
+              <a href="#">Home</a>
+            </li>
+            <li class="relative py-2 dropdown lg:p-0">
+              <span
+                class="flex items-center justify-between lg:justify-normal cursor-pointer dropdown-item"
+                data-toggle="dropdown-menu"
+                >Catalogue<i
+                  class="fa-solid fa-angle-down cursor-pointer lg:ml-2"
+                ></i
+              ></span>
+              <ul class="dropdown-menu flex flex-col gap-2">
+                <li><a href="#">Catalogue option</a></li>
+                <li><a href="#">Catalogue option</a></li>
+                <li><a href="#">Catalogue option</a></li>
+                <li><a href="#">Catalogue option</a></li>
+                <li><a href="#">Catalogue option</a></li>
+                <li><a href="#">Catalogue option</a></li>
+              </ul>
+            </li>
+            <li class="relative py-2 dropdown lg:p-0">
+              <span
+                class="flex items-center justify-between lg:justify-normal cursor-pointer dropdown-item"
+                data-toggle="dropdown-menu"
+                >Services<i
+                  class="fa-solid fa-angle-down cursor-pointer lg:ml-2"
+                ></i
+              ></span>
+              <ul class="dropdown-menu flex flex-col gap-2 py-2 px-4">
+                <li>commercial printing</li>
+                <li>embroidery</li>
+                <li>protect equipment</li>
+                <li>promotional material</li>
+              </ul>
+            </li>
+            <li class="py-2">
+              <a href="#">About Us</a>
+            </li>
+            <li class="py-2">
+              <a href="#">Contact us</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <section class="hero"></section>
     <main></main>
