@@ -56,10 +56,9 @@ a {
 
 .mobile-menu {
   position: absolute;
-  top: 11vh;
+  top: 12vh;
   height: 92vh;
   width: 50%;
-
   /* opacity: 0.95; */
   visibility: hidden;
   transform: translateX(-100%);
