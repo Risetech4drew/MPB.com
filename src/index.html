@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script defer src="main.js"></script>
+    <title>MPB</title>
+  </head>
+  <body class="m-0 p-0 overflow-x-hidden">
+    <div id="top-bar" class="bg-sky-950 p-4">
+      <div class="lg:container mx-auto flex justify-between text-slate-50">
+        <div class="md:flex md:space-x-2">
+          <div class="mb-4">
+            <i class="fa-solid fa-location-dot"></i>
+            <span class="">Location</span>
+          </div>
+          <div>
+            <i class="fa-solid fa-envelope"></i>
+            <span>Contact</span>
+          </div>
+        </div>
+        <div class="md:flex md:space-x-2">
+          <div class="mb-4">
+            <i class="fa-solid fa-phone"></i>
+            (0992407348)
+          </div>
+          <div>
+            <i class="fa-solid fa-phone"></i>
+            (0992407348)
+          </div>
+        </div>
+      </div>
+    </div>
+    <header class="lg:shadow-xl">
+      <nav class="flex justify-between items-center h-16 lg:container mx-0n">
+        <a
+          href="#"
+          class="text-2xl text-red-700 font-bold tracking-wider whitespace-nowrap block px-2"
+          >MPB</a
+        >
+        <ul
+          class="mobile-menu flex flex-col gap-2 lg:flex-row lg:items-center lg:justify-end px-2 pt-[4em] lg:p-0 font-semibold bg-white lg:bg-transparent text-neutral-900"
+        >
+          <li class="py-2">
+            <a href="#">Home</a>
+          </li>
+          <li
+            class="relative border-t border-b border-gray-600 lg:border-none py-2 dropdown lg:p-0"
+          >
+            <span
+              class="flex items-center justify-between lg:justify-normal cursor-pointer dropdown-item"
+              data-toggle="dropdown-menu"
+              >Catalogue<i
+                class="fa-solid fa-angle-down cursor-pointer lg:ml-2"
+              ></i
+            ></span>
+            <ul class="dropdown-menu flex flex-col gap-2">
+              <li><a href="#">Catalogue option</a></li>
+              <li><a href="#">Catalogue option</a></li>
+              <li><a href="#">Catalogue option</a></li>
+              <li><a href="#">Catalogue option</a></li>
+              <li><a href="#">Catalogue option</a></li>
+              <li><a href="#">Catalogue option</a></li>
+            </ul>
+          </li>
+          <li
+            class="relative border-1 border-b border-gray-600 lg:border-none py-2 dropdown lg:p-0"
+          >
+            <span
+              class="flex items-center justify-between lg:justify-normal cursor-pointer dropdown-item"
+              data-toggle="dropdown-menu"
+              >Services<i
+                class="fa-solid fa-angle-down cursor-pointer lg:ml-2"
+              ></i
+            ></span>
+            <ul class="dropdown-menu flex flex-col gap-2 py-2 px-4">
+              <li>commercial printing</li>
+              <li>embroidery</li>
+              <li>protect equipment</li>
+              <li>promotional material</li>
+            </ul>
+          </li>
+          <li class="border-1 border-b border-gray-600 lg:border-none py-2">
+            <a href="#">About Us</a>
+          </li>
+          <li class="py-2">
+            <a href="#">Contact us</a>
+          </li>
+        </ul>
+        <button id="hamburger-el" class="lg:hidden z-20" aria-label="Main Menu">
+          <svg width="100" height="50" viewBox="0 0 100 100">
+            <path
+              class="line line1"
+              d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"
+            />
+            <path class="line line2" d="M 20,50 H 80" />
+            <path
+              class="line line3"
+              d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"
+            />
+          </svg>
+        </button>
+      </nav>
+    </header>
+    <section class="hero"></section>
+    <main></main>
+  </body>
+</html>
+<!-- onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened')) -->
