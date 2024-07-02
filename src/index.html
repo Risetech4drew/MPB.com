@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="output.css" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <!-- font awesome -->
     <link
       rel="stylesheet"
@@ -65,17 +72,19 @@
             class="menu flex flex-col gap-2 lg:flex-row lg:items-center lg:justify-end lg:p-0 font-semibold bg-white lg:bg-transparent text-neutral-900 z-0"
           >
             <li class="py-2">
-              <a href="#">Home</a>
+              <a class="link" href="#">Home</a>
             </li>
             <li class="relative py-2 dropdown lg:p-0">
               <span
-                class="flex items-center justify-between lg:justify-normal cursor-pointer dropdown-item"
+                class="flex items-center justify-between lg:justify-normal cursor-pointer link"
                 data-toggle="dropdown-menu"
                 >Catalogue<i
                   class="fa-solid fa-angle-down cursor-pointer lg:ml-2"
                 ></i
               ></span>
-              <ul class="dropdown-menu flex flex-col gap-2">
+              <ul
+                class="dropdown-menu flex flex-col gap-2 lg:shadow-xl lg:rounded-md"
+              >
                 <li><a href="#">Safety footwear</a></li>
                 <li><a href="#">Hand protection</a></li>
                 <li><a href="#">Workwear</a></li>
@@ -86,23 +95,25 @@
             </li>
             <li class="relative py-2 dropdown lg:p-0">
               <span
-                class="flex items-center justify-between lg:justify-normal cursor-pointer dropdown-item"
+                class="flex items-center justify-between lg:justify-normal cursor-pointer link"
                 data-toggle="dropdown-menu"
                 >Services<i
                   class="fa-solid fa-angle-down cursor-pointer lg:ml-2"
                 ></i
               ></span>
-              <ul class="dropdown-menu flex flex-col gap-2 py-2 px-4">
+              <ul
+                class="dropdown-menu flex flex-col gap-2 py-2 px-4 lg:shadow-xl lg:rounded-md"
+              >
                 <li>commercial printing</li>
                 <li>embroidery</li>
                 <li>Branding</li>
               </ul>
             </li>
             <li class="py-2">
-              <a href="#">About Us</a>
+              <a class="link" href="#">About Us</a>
             </li>
             <li class="py-2">
-              <a href="#">Contact us</a>
+              <a class="link" href="#">Contact us</a>
             </li>
           </ul>
         </nav>
@@ -112,4 +123,3 @@
     <main></main>
   </body>
 </html>
-<!-- onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened')) -->

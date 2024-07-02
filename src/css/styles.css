@@ -2,9 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-a {
-  cursor: pointer;
+body {
+  font-family: "Poppins", sans-serif;
 }
+
+/* a {
+  cursor: pointer;
+} */
 
 /* hamburger */
 
@@ -77,6 +81,10 @@ a {
   height: auto;
   padding: 1rem 0.5em 1em;
 }
+.link {
+  font-size: clamp(1.125rem, 0.75rem + 1vw, 1.3125rem);
+  font-weight: 500;
+}
 
 @keyframes navlinkfade {
   from {
@@ -119,22 +127,24 @@ a {
     opacity: 1;
     margin-left: 5em;
   }
+
   .dropdown-menu {
     position: absolute;
     top: 2.35rem;
     left: -2rem;
     min-width: 13em;
-    height: auto;
+    max-height: min-content;
+    padding: 1em;
     border: none;
     visibility: hidden;
     opacity: 0;
     transform: translateY(1rem);
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
-  .dropdown-item:hover > .dropdown-menu {
+  .dropdown:hover > .dropdown-menu {
+    border-top: 2px solid rgb(8 47 73);
+    transform: translateY(0);
     opacity: 1;
     visibility: visible;
-    transform: translateY(0);
-    /* border: 2px solid purple; */
   }
 }
