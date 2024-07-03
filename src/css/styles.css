@@ -161,3 +161,6 @@ body {
 .hero__headline {
   font-size: clamp(1.5rem, 0.75rem + 1vw, 2rem);
 }
+.txt {
+  border-right: 2px solid orangered;
+}
