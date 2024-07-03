@@ -22,7 +22,7 @@
     <script defer src="main.js"></script>
     <title>MPB</title>
   </head>
-  <body class="m-0 p-0 overflow-x-hidden">
+  <body class="overflow-x-hidden">
     <div id="top-bar" class="bg-sky-950 p-4">
       <div class="lg:container mx-auto flex justify-between text-slate-50">
         <div class="md:flex md:space-x-2">
@@ -48,10 +48,10 @@
       </div>
     </div>
     <header class="shadow-xl">
-      <div class="flex justify-between items-center h-16 lg:container mx-0">
+      <div class="flex justify-between items-center h-16 lg:container mx-auto">
         <a
           href="#"
-          class="text-2xl text-red-700 font-bold tracking-wider whitespace-nowrap z-10 block px-2"
+          class="text-2xl md:text-4xl text-red-700 font-bold tracking-wider whitespace-nowrap z-10 block pl-4"
           >MPB</a
         >
         <button id="hamburger-el" class="lg:hidden z-20" aria-label="Main Menu">
@@ -67,7 +67,8 @@
             />
           </svg>
         </button>
-        <nav class="navbar shadow-lg lg:shadow-none">
+        <!-- <span class="overlay"></span> -->
+        <nav class="navbar shadow-lg lg:shadow-none bg-white">
           <ul
             class="menu flex flex-col gap-2 lg:flex-row lg:items-center lg:justify-end lg:p-0 font-semibold bg-white lg:bg-transparent text-neutral-900 z-0"
           >
@@ -83,7 +84,7 @@
                 ></i
               ></span>
               <ul
-                class="dropdown-menu flex flex-col gap-2 lg:shadow-xl lg:rounded-md"
+                class="dropdown-menu lg:border-t-4 border-sky-900 flex flex-col gap-2 lg:shadow-xl lg:rounded-md bg-white"
               >
                 <li><a class="font-medium" href="#">Safety footwear</a></li>
                 <li><a class="font-medium" href="#">Hand protection</a></li>
@@ -102,7 +103,7 @@
                 ></i
               ></span>
               <ul
-                class="dropdown-menu flex flex-col gap-2 py-2 px-4 lg:shadow-xl lg:rounded-md"
+                class="dropdown-menu lg:border-t-4 border-sky-900 flex flex-col gap-2 py-2 px-4 lg:shadow-xl lg:rounded-md bg-white"
               >
                 <li><a class="font-medium" href="#">commercial printing</a></li>
                 <li><a class="font-medium" href="#">embroidery</a></li>
@@ -119,7 +120,24 @@
         </nav>
       </div>
     </header>
-    <section class="hero"></section>
+    <section
+      class="hero flex flex-col justify-start py-20 items-center h-[60vh]"
+    >
+      <div class="lg:container mx-auto text-center w-[90%]">
+        <h1 class="hero__headline mb-4">
+          Your Trusted Partner in PPE Supply & Custom Branding
+        </h1>
+        <p class="mb-6">
+          From Safety Gear to Promotional Materials, We’ve Got You Covered
+        </p>
+        <p>
+          we specialize in providing top-quality PPE and custom branding
+          solutions for your business. Whether you need commercial printing,
+          embroidery, or promotional items, our team ensures your brand stands
+          out.
+        </p>
+      </div>
+    </section>
     <main></main>
   </body>
 </html>
