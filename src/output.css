@@ -554,8 +554,16 @@ video {
   --tw-contain-style:  ;
 }
 
+.absolute {
+  position: absolute;
+}
+
 .relative {
   position: relative;
+}
+
+.inset-0 {
+  inset: 0px;
 }
 
 .z-0 {
@@ -587,18 +595,6 @@ video {
   margin-top: 1rem;
 }
 
-.ml-2 {
-  margin-left: 0.5rem;
-}
-
-.ml-3 {
-  margin-left: 0.75rem;
-}
-
-.ml-4 {
-  margin-left: 1rem;
-}
-
 .block {
   display: block;
 }
@@ -611,10 +607,6 @@ video {
   display: flex;
 }
 
-.hidden {
-  display: none;
-}
-
 .h-16 {
   height: 4rem;
 }
@@ -625,10 +617,6 @@ video {
 
 .w-\[90\%\] {
   width: 90%;
-}
-
-.w-\[50\%\] {
-  width: 50%;
 }
 
 .cursor-pointer {
@@ -651,16 +639,12 @@ video {
   justify-content: space-between;
 }
 
-.gap-2 {
-  gap: 0.5rem;
-}
-
-.gap-4 {
-  gap: 1rem;
-}
-
 .gap-1 {
   gap: 0.25rem;
+}
+
+.gap-2 {
+  gap: 0.5rem;
 }
 
 .overflow-x-hidden {
@@ -697,6 +681,11 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
 .p-4 {
@@ -770,6 +759,10 @@ video {
 .text-slate-50 {
   --tw-text-opacity: 1;
   color: rgb(248 250 252 / var(--tw-text-opacity));
+}
+
+.opacity-50 {
+  opacity: 0.5;
 }
 
 .shadow-lg {
@@ -964,6 +957,14 @@ body {
 
 /* hero section */
 
+.hero {
+  background-image: url(/src/assets/imgs/PPE.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #fff;
+}
+
 .hero__headline {
   font-size: clamp(1.5rem, 0.75rem + 1vw, 2rem);
 }
@@ -1011,10 +1012,6 @@ body {
 }
 
 @media (min-width: 768px) {
-  .md\:visible {
-    visibility: visible;
-  }
-
   .md\:flex {
     display: flex;
   }
