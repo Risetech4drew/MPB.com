@@ -166,7 +166,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  color: #fff;
+  /* color: #fff; */
 }
 .hero__headline {
   font-size: clamp(1.5rem, 0.75rem + 1vw, 2rem);
