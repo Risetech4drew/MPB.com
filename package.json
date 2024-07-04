@@ -6,7 +6,7 @@
   "version": "1.0.0",
   "main": "tailwind.config.js",
   "scripts": {
-    "build": "npx tailwindcss -i ./src/css/styles.css -o ./src/output.css --watch"
+    "build": "npx tailwindcss -i ./styles.css -o ./output.css --watch"
   },
   "keywords": [],
   "author": "",
