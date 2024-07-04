@@ -861,6 +861,10 @@ video {
   height: 60vh;
 }
 
+.w-\[20\%\] {
+  width: 20%;
+}
+
 .w-\[90\%\] {
   width: 90%;
 }
@@ -875,6 +879,14 @@ video {
 
 .w-\[weird-and-invalid\] {
   width: weird-and-invalid;
+}
+
+.w-\[50\%\] {
+  width: 50%;
+}
+
+.w-\[30\%\] {
+  width: 30%;
 }
 
 .flex-shrink {
@@ -2089,6 +2101,10 @@ video {
   line-height: 2rem;
 }
 
+.text-\[50px\] {
+  font-size: 50px;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -2886,6 +2902,10 @@ body {
 
   .md\:hidden {
     display: none;
+  }
+
+  .md\:w-\[20\%\] {
+    width: 20%;
   }
 
   .md\:space-x-2 > :not([hidden]) ~ :not([hidden]) {
