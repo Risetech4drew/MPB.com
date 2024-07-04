@@ -162,11 +162,11 @@ body {
 
 /* hero section */
 .hero {
-  /* background-image: url(/src/assets/imgs/PPE.jpg); */
+  background-image: url(assets/imgs/PPE.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  /* color: #fff; */
+  color: #fff;
 }
 .hero__headline {
   font-size: clamp(1.5rem, 0.75rem + 1vw, 2rem);
