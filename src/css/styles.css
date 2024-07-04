@@ -155,6 +155,9 @@ body {
     opacity: 1;
     visibility: visible;
   }
+  .dropdown:hover > .fa-angle-down {
+    transform: rotate(350deg);
+  }
 }
 
 /* hero section */
