@@ -958,7 +958,7 @@ body {
 /* hero section */
 
 .hero {
-  background-image: url(/src/assets/imgs/PPE.jpg);
+  /* background-image: url(/src/assets/imgs/PPE.jpg); */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
