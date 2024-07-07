@@ -861,8 +861,8 @@ video {
   height: 60vh;
 }
 
-.w-\[20\%\] {
-  width: 20%;
+.w-\[30\%\] {
+  width: 30%;
 }
 
 .w-\[90\%\] {
@@ -879,14 +879,6 @@ video {
 
 .w-\[weird-and-invalid\] {
   width: weird-and-invalid;
-}
-
-.w-\[50\%\] {
-  width: 50%;
-}
-
-.w-\[30\%\] {
-  width: 30%;
 }
 
 .flex-shrink {
@@ -2605,14 +2597,14 @@ body {
 
 /* hamburger */
 
-.menu {
+/* .menu {
   background-color: transparent;
   border: none;
   cursor: pointer;
   display: flex;
   padding: 0;
   outline: none;
-}
+} */
 
 .line {
   fill: none;
@@ -2659,15 +2651,21 @@ body {
 
 /* mobile-nav */
 
+.logo {
+  border: 2px solid red;
+}
+
 .navbar {
   position: absolute;
-  top: 19.5vh;
+  top: 17.5vh;
   height: 100%;
   width: 65%;
   /* opacity: 0.95; */
   visibility: hidden;
   transform: translateX(-100%);
   transition: transform 0.5s ease-in, visibility 0.5s ease-in;
+  flex-shrink: 1;
+  flex-grow: 1;
 }
 
 .menu > li {
@@ -2686,8 +2684,9 @@ body {
 }
 
 .link {
-  font-size: clamp(1.125rem, 0.75rem + 1vw, 1.3125rem);
-  font-weight: 500;
+  /* font-size: clamp(0.75rem, 0.75rem + 1vw, 1rem); */
+  /* font-size: 10px; */
+  font-weight: 700;
 }
 
 @keyframes navlinkfade {
@@ -2707,7 +2706,7 @@ body {
 .dropdown-menu {
   position: relative;
   top: 1rem;
-  left: 0.5em;
+  /* left: 0.5em; */
   max-height: 0;
   padding: 0;
   overflow: hidden;
@@ -2730,7 +2729,7 @@ body {
   /* transition: all 0.3s ease-in-out; */
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1024px) {
   .navbar {
     position: static;
     visibility: visible;
@@ -2739,12 +2738,16 @@ body {
     padding: 0;
     margin-left: auto;
     flex-grow: 1;
-    flex-shrink: 0;
+    flex-shrink: 1;
+    background: transparent;
+  }
+
+  .menu {
   }
 
   .menu > li {
     opacity: 1;
-    margin-left: 5em;
+    /* margin-left: 5em; */
   }
 
   .dropdown-menu {
@@ -2900,10 +2903,6 @@ body {
     display: flex;
   }
 
-  .md\:hidden {
-    display: none;
-  }
-
   .md\:w-\[20\%\] {
     width: 20%;
   }
@@ -2941,8 +2940,8 @@ body {
     justify-content: normal;
   }
 
-  .lg\:justify-end {
-    justify-content: flex-end;
+  .lg\:justify-around {
+    justify-content: space-around;
   }
 
   .lg\:rounded-md {
