@@ -76,9 +76,10 @@ body {
 /* tablet */
 @media (min-width: 600px) and (max-width: 1024px) {
   .navbar {
-    /* top: 12.5vh; */
+    top: 17%;
   }
 }
+
 .menu > li {
   opacity: 0;
 }
@@ -93,9 +94,7 @@ body {
   padding: 1rem 0.5em 1em;
 }
 .link {
-  /* font-size: clamp(0.75rem, 0.75rem + 1vw, 1rem); */
-  /* font-size: 10px; */
-  font-weight: 700;
+  font-weight: 500;
 }
 
 @keyframes navlinkfade {
@@ -189,4 +188,7 @@ body {
 }
 .txt {
   border-right: 2px solid orangered;
+}
+.item-wrapper {
+  width: 300px;
 }
