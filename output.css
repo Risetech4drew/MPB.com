@@ -2028,10 +2028,6 @@ video {
   padding-bottom: 1rem;
 }
 
-.pl-4 {
-  padding-left: 1rem;
-}
-
 .text-left {
   text-align: left;
 }
@@ -2086,11 +2082,6 @@ video {
 
 .align-super {
   vertical-align: super;
-}
-
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
 }
 
 .text-\[50px\] {
@@ -2177,10 +2168,6 @@ video {
   font-variant-numeric: var(--tw-ordinal) var(--tw-slashed-zero) var(--tw-numeric-figure) var(--tw-numeric-spacing) var(--tw-numeric-fraction);
 }
 
-.tracking-wider {
-  letter-spacing: 0.05em;
-}
-
 .text-\[\#336699\]\/\[\.35\] {
   color: rgb(51 102 153 / .35);
 }
@@ -2193,11 +2180,6 @@ video {
 .text-neutral-900 {
   --tw-text-opacity: 1;
   color: rgb(23 23 23 / var(--tw-text-opacity));
-}
-
-.text-red-700 {
-  --tw-text-opacity: 1;
-  color: rgb(185 28 28 / var(--tw-text-opacity));
 }
 
 .text-slate-50 {
@@ -2657,7 +2639,7 @@ body {
 
 .navbar {
   position: absolute;
-  top: 17.5vh;
+  top: 19%;
   height: 100%;
   width: 65%;
   /* opacity: 0.95; */
@@ -2666,6 +2648,14 @@ body {
   transition: transform 0.5s ease-in, visibility 0.5s ease-in;
   flex-shrink: 1;
   flex-grow: 1;
+}
+
+/* tablet */
+
+@media (min-width: 600px) and (max-width: 1024px) {
+  .navbar {
+    /* top: 12.5vh; */
+  }
 }
 
 .menu > li {
@@ -2911,11 +2901,6 @@ body {
     --tw-space-x-reverse: 0;
     margin-right: calc(0.5rem * var(--tw-space-x-reverse));
     margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
-  }
-
-  .md\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
   }
 }
 

@@ -63,7 +63,7 @@ body {
 
 .navbar {
   position: absolute;
-  top: 17.5vh;
+  top: 19%;
   height: 100%;
   width: 65%;
   /* opacity: 0.95; */
@@ -72,6 +72,12 @@ body {
   transition: transform 0.5s ease-in, visibility 0.5s ease-in;
   flex-shrink: 1;
   flex-grow: 1;
+}
+/* tablet */
+@media (min-width: 600px) and (max-width: 1024px) {
+  .navbar {
+    /* top: 12.5vh; */
+  }
 }
 .menu > li {
   opacity: 0;
