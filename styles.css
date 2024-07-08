@@ -57,7 +57,7 @@ body {
   top: 64px;
   bottom: 0;
   height: 100vh;
-  overflow-y: auto;
+  overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
   width: 65%;
   visibility: hidden;
@@ -126,6 +126,7 @@ body {
     height: auto;
     padding: 0;
     margin-left: auto;
+    overflow-y: visible;
     flex-grow: 1;
     flex-shrink: 1;
     background: transparent;
