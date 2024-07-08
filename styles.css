@@ -171,9 +171,9 @@ body {
 .txt {
   border-right: 2px solid orangered;
 }
-.item-wrapper {
+/* .item-wrapper {
   width: min(80%, 300px);
-}
+} */
 
 /* footwear section */
 .footwear-cta {
