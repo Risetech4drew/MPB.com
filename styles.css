@@ -6,27 +6,14 @@ body {
   font-family: "Roboto", sans-serif;
 }
 #header {
-  z-index: 1000;
   /* position: fixed;
   top: 0;
   left: 0;
-  width: 100%; */
+  width: 100%;
+  z-index: 1000;
+  background: white; */
 }
-
-/* a {
-  cursor: pointer;
-} */
-
 /* hamburger */
-
-/* .menu {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  display: flex;
-  padding: 0;
-  outline: none;
-} */
 .line {
   fill: none;
   stroke: #000;
@@ -64,9 +51,6 @@ body {
 /* hamburger */
 
 /* mobile-nav */
-.logo {
-  border: 2px solid red;
-}
 
 .navbar {
   position: absolute;
@@ -74,21 +58,11 @@ body {
   bottom: 0;
   height: 100vh;
   width: 65%;
-  z-index: 999;
-  /* opacity: 0.95; */
   visibility: hidden;
   transform: translateX(-100%);
   transition: transform 0.5s ease-in, visibility 0.5s ease-in;
   flex-shrink: 1;
   flex-grow: 1;
-  border: 2px solid red;
-}
-.fixed-top {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  /* z-index: 1000; */
 }
 /* tablet */
 @media (min-width: 600px) and (max-width: 1024px) {
@@ -129,7 +103,6 @@ body {
 .dropdown-menu {
   position: relative;
   top: 1rem;
-  /* left: 0.5em; */
   max-height: 0;
   padding: 0;
   overflow: hidden;
@@ -139,15 +112,9 @@ body {
 .dropdown-menu-active {
   transform: translateY(0px);
 }
-.overlay {
-  /* position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%; */
-  /* z-index: 9; */
-  /* background-color: rgba(0, 0, 0, 0.65); */
-  /* transition: all 0.3s ease-in-out; */
+.overlay.active {
+  opacity: 0.5;
+  visibility: visible;
 }
 @media (min-width: 1024px) {
   .navbar {
@@ -161,12 +128,8 @@ body {
     flex-shrink: 1;
     background: transparent;
   }
-  .menu {
-  }
-
   .menu > li {
     opacity: 1;
-    /* margin-left: 5em; */
   }
 
   .dropdown-menu {
@@ -176,7 +139,6 @@ body {
     min-width: 13em;
     max-height: min-content;
     padding: 1em;
-    /* border: none; */
     visibility: hidden;
     opacity: 0;
     transform: translateY(1rem);

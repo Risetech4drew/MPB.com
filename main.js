@@ -1,4 +1,36 @@
 (function () {
+  // Store the initial body padding to prevent layout shift
+  let scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
+  let initialBodyPadding =
+    parseInt(
+      window.getComputedStyle(document.body).getPropertyValue("padding-right")
+    ) || 0;
+  // Function to disable scroll
+  function disableScroll() {
+    if (document.body.style.overflow !== "hidden") {
+      const scrollY = window.scrollY;
+      document.body.style.position = "fixed";
+      document.body.style.top = `-${scrollY}px`;
+      document.body.style.width = "100%";
+      document.body.style.overflow = "hidden";
+      document.body.style.paddingRight = `${
+        initialBodyPadding + scrollbarWidth
+      }px`;
+    }
+  }
+  // Function to enable scroll
+  function enableScroll() {
+    if (document.body.style.overflow === "hidden") {
+      const scrollY = document.body.style.top;
+      document.body.style.position = "";
+      document.body.style.top = "";
+      document.body.style.width = "";
+      document.body.style.overflow = "";
+      document.body.style.paddingRight = "";
+      window.scrollTo(0, parseInt(scrollY || "0") * -1);
+    }
+  }
+
   // selector helper function
   const select = (el, all = false) => {
     el = el.trim();
@@ -22,12 +54,17 @@
   // mobile nav toggle
   on("click", "#hamburger-el", function (e) {
     const hamburger = select("#hamburger-el");
+    const navbar = select(".navbar");
     hamburger.classList.toggle("opened");
     hamburger.setAttribute(
       "aria-expanded",
       hamburger.classList.contains("opened")
     );
-    select(".navbar").classList.toggle("navbar-active");
+    select(".overlay").classList.toggle("active");
+    navbar.classList.toggle("navbar-active");
+    navbar.classList.contains("navbar-active")
+      ? disableScroll()
+      : enableScroll();
     select(".menu > li", (all = true)).forEach((link, index) => {
       if (link.style.animation) {
         link.style.animation = "";
@@ -71,22 +108,22 @@
     el.addEventListener("scroll", listener);
   };
   // stick header on top on scroll
-  let selectHeader = select("#header");
-  if (selectHeader) {
-    let headerOffset = selectHeader.offsetTop;
-    let nextElement = selectHeader.nextElementSibling;
-    const headerFixed = () => {
-      if (headerOffset - window.scrollY <= 0) {
-        selectHeader.classList.add("fixed-top");
-        // nextElement.classList.add("scrolled-offset");
-      } else {
-        selectHeader.classList.remove("fixed-top");
-        // nextElement.classList.remove("scrolled-offset");fixed-top
-      }
-    };
-    window.addEventListener("load", headerFixed);
-    onscroll(document, headerFixed);
-  }
+  // let selectHeader = select("#header");
+  // if (selectHeader) {
+  //   let headerOffset = selectHeader.offsetTop;
+  //   let nextElement = selectHeader.nextElementSibling;
+  //   const headerFixed = () => {
+  //     if (headerOffset - window.scrollY <= 0) {
+  //       selectHeader.classList.add("fixed-top");
+  //       // nextElement.classList.add("scrolled-offset");
+  //     } else {
+  //       selectHeader.classList.remove("fixed-top");
+  //       // nextElement.classList.remove("scrolled-offset");fixed-top
+  //     }
+  //   };
+  //   window.addEventListener("load", headerFixed);
+  //   onscroll(document, headerFixed);
+  // }
 
   class TypeWritter {
     constructor(textElement, words, wait = 3000) {
