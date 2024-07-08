@@ -6,30 +6,30 @@
       window.getComputedStyle(document.body).getPropertyValue("padding-right")
     ) || 0;
   // Function to disable scroll
-  function disableScroll() {
+
+  const disableMainScroll = () => {
     if (document.body.style.overflow !== "hidden") {
-      const scrollY = window.scrollY;
-      document.body.style.position = "fixed";
-      document.body.style.top = `-${scrollY}px`;
-      document.body.style.width = "100%";
       document.body.style.overflow = "hidden";
       document.body.style.paddingRight = `${
         initialBodyPadding + scrollbarWidth
       }px`;
     }
-  }
+  };
   // Function to enable scroll
-  function enableScroll() {
-    if (document.body.style.overflow === "hidden") {
-      const scrollY = document.body.style.top;
-      document.body.style.position = "";
-      document.body.style.top = "";
-      document.body.style.width = "";
-      document.body.style.overflow = "";
-      document.body.style.paddingRight = "";
-      window.scrollTo(0, parseInt(scrollY || "0") * -1);
-    }
-  }
+  const enableMainScroll = () => {
+    document.body.style.overflow = "";
+    document.body.style.paddingRight = "";
+  };
+
+  // document.body.addEventListener(
+  //   "touchmove",
+  //   function (e) {
+  //     if (navbar.classList.contains("active") && !navbar.contains(e.target)) {
+  //       e.preventDefault();
+  //     }
+  //   },
+  //   { passive: false }
+  // );
 
   // selector helper function
   const select = (el, all = false) => {
@@ -51,6 +51,22 @@
       }
     }
   };
+
+  // const preventTouchEvent = () => {
+  //   on(
+  //     "touchmove",
+  //     "body",
+  //     (e) => {
+  //       if (
+  //         navbar.classList.contains("navbar-active") &&
+  //         !navbar.contains(e.target)
+  //       ) {
+  //         e.preventDefault();
+  //       }
+  //     },
+  //     { passive: false }
+  //   );
+  // };
   // mobile nav toggle
   on("click", "#hamburger-el", function (e) {
     const hamburger = select("#hamburger-el");
@@ -63,8 +79,22 @@
     select(".overlay").classList.toggle("active");
     navbar.classList.toggle("navbar-active");
     navbar.classList.contains("navbar-active")
-      ? disableScroll()
-      : enableScroll();
+      ? disableMainScroll()
+      : enableMainScroll();
+    //preventing touch events on body
+    document.body.addEventListener(
+      "touchmove",
+      (e) => {
+        if (
+          navbar.classList.contains("navbar-active") &&
+          !navbar.contains(e.target)
+        ) {
+          e.preventDefault();
+        }
+      },
+      { passive: false }
+    );
+    // end
     select(".menu > li", (all = true)).forEach((link, index) => {
       if (link.style.animation) {
         link.style.animation = "";
@@ -75,6 +105,7 @@
       }
     });
   });
+
   const collapseDropdown = () => {
     const navbar = select(".navbar");
     navbar
