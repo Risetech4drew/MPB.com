@@ -5,14 +5,7 @@
 body {
   font-family: "Roboto", sans-serif;
 }
-#header {
-  /* position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-  background: white; */
-}
+
 /* hamburger */
 .line {
   fill: none;
@@ -193,3 +186,41 @@ body {
   opacity: 0.5;
   z-index: 1;
 } */
+
+.reflective-gear-bg {
+  background-image: url("/assets/imgs/PPE.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.workwear-bg {
+  background-image: url("/assets/imgs/Safety-Workwear.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.welding-bg {
+  background-image: url("/assets/imgs/welding.jfif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.hand-protection-bg {
+  background-image: url("/assets/imgs/hand_protection.jfif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.tools-bg {
+  background-image: url("/assets/imgs/tools.jfif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.road-saftey-bg {
+  background-image: url("/assets/imgs/roadsafety.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}

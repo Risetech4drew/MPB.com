@@ -1,0 +1,9 @@
+#Dependency directories
+node_modules/
+#Logs
+npm-debug.log*
+#npm cache directory
+.npm
+#OS generated files
+.OS_Store
+Thumbs.db

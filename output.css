@@ -758,8 +758,16 @@ video {
   margin-right: auto;
 }
 
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
+
 .mb-4 {
   margin-bottom: 1rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
 }
 
 .mr-4 {
@@ -776,10 +784,6 @@ video {
 
 .mt-4 {
   margin-top: 1rem;
-}
-
-.mt-5 {
-  margin-top: 1.25rem;
 }
 
 .mt-8 {
@@ -897,20 +901,20 @@ video {
   height: 60vh;
 }
 
-.h-48 {
-  height: 12rem;
-}
-
-.h-80 {
-  height: 20rem;
-}
-
 .h-full {
   height: 100%;
 }
 
 .w-\[30\%\] {
   width: 30%;
+}
+
+.w-\[60\%\] {
+  width: 60%;
+}
+
+.w-\[80\%\] {
+  width: 80%;
 }
 
 .w-\[90\%\] {
@@ -931,14 +935,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-\[50\%\] {
-  width: 50%;
-}
-
-.w-\[60\%\] {
-  width: 60%;
 }
 
 .flex-shrink {
@@ -1285,10 +1281,6 @@ video {
 
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .flex-row {
@@ -1943,16 +1935,6 @@ video {
   border-style: none;
 }
 
-.border-gray-500 {
-  --tw-border-opacity: 1;
-  border-color: rgb(107 114 128 / var(--tw-border-opacity));
-}
-
-.border-sky-700 {
-  --tw-border-opacity: 1;
-  border-color: rgb(3 105 161 / var(--tw-border-opacity));
-}
-
 .border-sky-900 {
   --tw-border-opacity: 1;
   border-color: rgb(12 74 110 / var(--tw-border-opacity));
@@ -1961,11 +1943,6 @@ video {
 .border-yellow-500 {
   --tw-border-opacity: 1;
   border-color: rgb(234 179 8 / var(--tw-border-opacity));
-}
-
-.border-red-600 {
-  --tw-border-opacity: 1;
-  border-color: rgb(220 38 38 / var(--tw-border-opacity));
 }
 
 .bg-\[rgb\(255\2c 0\2c 0\)\] {
@@ -2299,6 +2276,10 @@ video {
   font-variant-numeric: var(--tw-ordinal) var(--tw-slashed-zero) var(--tw-numeric-figure) var(--tw-numeric-spacing) var(--tw-numeric-fraction);
 }
 
+.tracking-wide {
+  letter-spacing: 0.025em;
+}
+
 .text-\[\#336699\]\/\[\.35\] {
   color: rgb(51 102 153 / .35);
 }
@@ -2378,8 +2359,16 @@ video {
   opacity: 0;
 }
 
+.opacity-40 {
+  opacity: 0.4;
+}
+
 .opacity-50 {
   opacity: 0.5;
+}
+
+.opacity-60 {
+  opacity: 0.6;
 }
 
 .bg-blend-normal {
@@ -2728,15 +2717,6 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-#header {
-  /* position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-  background: white; */
-}
-
 /* hamburger */
 
 .line {
@@ -2945,6 +2925,48 @@ body {
   z-index: 1;
 } */
 
+.reflective-gear-bg {
+  background-image: url("/assets/imgs/PPE.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.workwear-bg {
+  background-image: url("/assets/imgs/Safety-Workwear.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.welding-bg {
+  background-image: url("/assets/imgs/welding.jfif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hand-protection-bg {
+  background-image: url("/assets/imgs/hand_protection.jfif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.tools-bg {
+  background-image: url("/assets/imgs/tools.jfif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.road-saftey-bg {
+  background-image: url("/assets/imgs/roadsafety.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
@@ -3054,16 +3076,28 @@ body {
     display: flex;
   }
 
+  .md\:h-80 {
+    height: 20rem;
+  }
+
   .md\:w-\[20\%\] {
     width: 20%;
   }
 
-  .md\:w-\[50\%\] {
-    width: 50%;
+  .md\:w-\[250px\] {
+    width: 250px;
+  }
+
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .md\:flex-row {
     flex-direction: row;
+  }
+
+  .md\:items-center {
+    align-items: center;
   }
 
   .md\:justify-center {
@@ -3075,6 +3109,11 @@ body {
     margin-right: calc(0.5rem * var(--tw-space-x-reverse));
     margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
   }
+
+  .md\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -3084,10 +3123,6 @@ body {
 
   .lg\:hidden {
     display: none;
-  }
-
-  .lg\:w-\[50\%\] {
-    width: 50%;
   }
 
   .lg\:w-\[30\%\] {
