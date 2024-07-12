@@ -253,5 +253,8 @@ body {
   height: auto;
   margin: 20px auto;
 }
-
+.slide-content {
+  background-color: #fff;
+  border: 1px solid gray;
+}
 /* swiper styles */
