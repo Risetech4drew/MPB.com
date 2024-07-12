@@ -239,7 +239,6 @@ body {
   align-items: center;
   text-align: center;
   font-size: 18px;
-  border: 2px solid red;
 }
 
 .swiper-slide img {
@@ -250,13 +249,9 @@ body {
 }
 .swiper {
   width: 80%;
-  max-width: 600px;
+  max-width: 1200px;
   height: auto;
   margin: 20px auto;
 }
-.item-description {
-  background: skyblue;
-  color: #fff;
-  padding: 0.5em;
-}
+
 /* swiper styles */
