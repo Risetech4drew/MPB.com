@@ -3,10 +3,11 @@
   let scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
   let initialBodyPadding =
     parseInt(
-      window.getComputedStyle(document.body).getPropertyValue("padding-right")
+      window
+        .getComputedStyle(document.querySelector("body"))
+        .getPropertyValue("padding-right")
     ) || 0;
   // Function to disable scroll
-
   const disableMainScroll = () => {
     if (document.body.style.overflow !== "hidden") {
       document.body.style.overflow = "hidden";
@@ -21,15 +22,15 @@
     document.body.style.paddingRight = "";
   };
 
-  // document.body.addEventListener(
-  //   "touchmove",
-  //   function (e) {
-  //     if (navbar.classList.contains("active") && !navbar.contains(e.target)) {
-  //       e.preventDefault();
-  //     }
-  //   },
-  //   { passive: false }
-  // );
+  document.body.addEventListener(
+    "touchmove",
+    function (e) {
+      if (navbar.classList.contains("active") && !navbar.contains(e.target)) {
+        e.preventDefault();
+      }
+    },
+    { passive: false }
+  );
 
   // selector helper function
   const select = (el, all = false) => {
@@ -52,21 +53,21 @@
     }
   };
 
-  // const preventTouchEvent = () => {
-  //   on(
-  //     "touchmove",
-  //     "body",
-  //     (e) => {
-  //       if (
-  //         navbar.classList.contains("navbar-active") &&
-  //         !navbar.contains(e.target)
-  //       ) {
-  //         e.preventDefault();
-  //       }
-  //     },
-  //     { passive: false }
-  //   );
-  // };
+  const preventTouchEvent = () => {
+    on(
+      "touchmove",
+      "body",
+      (e) => {
+        if (
+          navbar.classList.contains("navbar-active") &&
+          !navbar.contains(e.target)
+        ) {
+          e.preventDefault();
+        }
+      },
+      { passive: false }
+    );
+  };
   // mobile nav toggle
   on("click", "#hamburger-el", function (e) {
     const hamburger = select("#hamburger-el");
@@ -95,7 +96,7 @@
       { passive: false }
     );
     // end
-    select(".menu > li", (all = true)).forEach((link, index) => {
+    select(".menu > li", true).forEach((link, index) => {
       if (link.style.animation) {
         link.style.animation = "";
       } else {
@@ -211,4 +212,19 @@
     new TypeWritter(textElement, words, wait);
   }
   initTypeWritter();
+
+  // swiper
+  new Swiper(".itemSwiper", {
+    slidesPerView: 2,
+    spaceBetween: 30,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 4,
+      },
+    },
+  });
 })();
