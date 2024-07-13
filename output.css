@@ -905,6 +905,18 @@ video {
   height: 100%;
 }
 
+.h-\[300px\] {
+  height: 300px;
+}
+
+.h-\[400px\] {
+  height: 400px;
+}
+
+.h-\[500px\] {
+  height: 500px;
+}
+
 .w-\[30\%\] {
   width: 30%;
 }
@@ -2385,10 +2397,6 @@ video {
 
 .opacity-50 {
   opacity: 0.5;
-}
-
-.opacity-60 {
-  opacity: 0.6;
 }
 
 .bg-blend-normal {
