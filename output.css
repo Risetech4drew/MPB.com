@@ -905,8 +905,8 @@ video {
   height: 16rem;
 }
 
-.h-\[60vh\] {
-  height: 60vh;
+.h-\[100vh\] {
+  height: 100vh;
 }
 
 .h-full {
@@ -915,6 +915,10 @@ video {
 
 .w-\[30\%\] {
   width: 30%;
+}
+
+.w-\[50\%\] {
+  width: 50%;
 }
 
 .w-\[60\%\] {
@@ -943,14 +947,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-\[50\%\] {
-  width: 50%;
-}
-
-.max-w-12 {
-  max-width: 3rem;
 }
 
 .flex-shrink {
@@ -2966,6 +2962,7 @@ body {
 
 .hero {
   background-image: url(assets/imgs/PPE.jpg);
+  background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

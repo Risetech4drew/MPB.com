@@ -153,6 +153,7 @@ body {
 /* hero section */
 .hero {
   background-image: url(assets/imgs/PPE.jpg);
+  background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
