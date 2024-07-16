@@ -254,12 +254,14 @@ body {
   height: auto;
   margin: 20px auto;
 }
-/* .slide-content {
-  background-color: #fff;
-  border: 1px solid gray;
-} */
+
 /* swiper styles */
+/* service cards grid layout */
+
+/* hide scroll bar */
 
 ::-webkit-scrollbar {
   display: none;
 }
+
+/*  */

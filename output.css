@@ -2162,11 +2162,6 @@ video {
   padding: 1.5rem;
 }
 
-.px-10 {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-}
-
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -2175,6 +2170,11 @@ video {
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 
 .py-10 {
@@ -2190,11 +2190,6 @@ video {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
-
-.px-5 {
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
 }
 
 .pb-4 {
@@ -3116,16 +3111,17 @@ body {
   margin: 20px auto;
 }
 
-/* .slide-content {
-  background-color: #fff;
-  border: 1px solid gray;
-} */
-
 /* swiper styles */
+
+/* service cards grid layout */
+
+/* hide scroll bar */
 
 ::-webkit-scrollbar {
   display: none;
 }
+
+/*  */
 
 @media (min-width: 640px) {
   .sm\:container {
@@ -3236,6 +3232,10 @@ body {
     display: flex;
   }
 
+  .md\:grid {
+    display: grid;
+  }
+
   .md\:h-80 {
     height: 20rem;
   }
@@ -3252,8 +3252,24 @@ body {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
+  .md\:grid-cols-service-cards {
+    grid-template-columns: repeat(auto-fill,minmax(15em,1fr));
+  }
+
   .md\:flex-row {
     flex-direction: row;
+  }
+
+  .md\:place-content-center {
+    place-content: center;
+  }
+
+  .md\:place-content-start {
+    place-content: start;
+  }
+
+  .md\:place-content-end {
+    place-content: end;
   }
 
   .md\:items-center {
