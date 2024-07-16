@@ -2,7 +2,11 @@
 module.exports = {
   content: ["./**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        hero: "url('/assets/imgs/PPE.jpg')",
+      },
+    },
     container: {
       center: true,
     },

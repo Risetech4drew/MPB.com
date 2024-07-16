@@ -905,10 +905,6 @@ video {
   height: 16rem;
 }
 
-.h-\[100vh\] {
-  height: 100vh;
-}
-
 .h-full {
   height: 100%;
 }
@@ -2000,6 +1996,10 @@ video {
   background-image: linear-gradient(to bottom left, var(--tw-gradient-stops));
 }
 
+.bg-hero {
+  background-image: url('/assets/imgs/PPE.jpg');
+}
+
 .from-black\/10 {
   --tw-gradient-from: rgb(0 0 0 / 0.1) var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(0 0 0 / 0) var(--tw-gradient-to-position);
@@ -2040,6 +2040,10 @@ video {
           box-decoration-break: clone;
 }
 
+.bg-cover {
+  background-size: cover;
+}
+
 .bg-fixed {
   background-attachment: fixed;
 }
@@ -2067,6 +2071,10 @@ video {
 .bg-clip-text {
   -webkit-background-clip: text;
           background-clip: text;
+}
+
+.bg-center {
+  background-position: center;
 }
 
 .bg-repeat {
@@ -2960,14 +2968,14 @@ body {
 
 /* hero section */
 
-.hero {
+/* .hero {
   background-image: url(assets/imgs/PPE.jpg);
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   color: #fff;
-}
+} */
 
 .hero__headline {
   font-size: clamp(1.5rem, 0.75rem + 1vw, 2rem);
@@ -3284,6 +3292,10 @@ body {
 
   .lg\:bg-transparent {
     background-color: transparent;
+  }
+
+  .lg\:bg-fixed {
+    background-attachment: fixed;
   }
 
   .lg\:p-0 {
