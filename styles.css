@@ -259,3 +259,7 @@ body {
   border: 1px solid gray;
 } */
 /* swiper styles */
+
+::-webkit-scrollbar {
+  display: none;
+}

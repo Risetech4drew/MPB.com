@@ -1495,12 +1495,12 @@ video {
   gap: 1rem;
 }
 
-.gap-8 {
-  gap: 2rem;
-}
-
 .gap-5 {
   gap: 1.25rem;
+}
+
+.gap-8 {
+  gap: 2rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
@@ -3117,6 +3117,10 @@ body {
 } */
 
 /* swiper styles */
+
+::-webkit-scrollbar {
+  display: none;
+}
 
 @media (min-width: 640px) {
   .sm\:container {
