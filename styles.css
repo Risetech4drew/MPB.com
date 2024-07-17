@@ -265,3 +265,14 @@ body {
 }
 
 /*  */
+.google-map {
+  /* position: relative;
+  padding-bottom: 50%; */
+}
+.google-map iframe {
+  /* height: 100%;
+  width: 100%; */
+  /* position: absolute;
+  top: 0;
+  left: 0; */
+}

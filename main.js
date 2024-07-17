@@ -210,4 +210,5 @@
       },
     },
   });
+  /*google map implementation */
 })();
