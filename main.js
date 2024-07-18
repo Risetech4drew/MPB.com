@@ -210,5 +210,13 @@
       },
     },
   });
-  /*google map implementation */
+
+  // date function
+  const setYear = () => {
+    const dateEl = select("#date-el");
+    let date = new Date();
+    let year = date.getFullYear();
+    dateEl.textContent = year;
+  };
+  setYear();
 })();
