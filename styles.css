@@ -150,6 +150,16 @@ body {
   }
 }
 
+/* foot wear grid */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(15em, 1fr));
+  grid-template-rows: repeat(1, 1fr);
+}
+
+/*  */
+
 /* hero section */
 /* .hero {
   background-image: url(assets/imgs/PPE.jpg);
