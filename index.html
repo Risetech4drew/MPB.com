@@ -69,13 +69,17 @@
       <div
         class="flex justify-between items-center h-16 z-50 lg:container mx-auto"
       >
-        <a href="#" class="block z-50"
+        <a href="#" class="inline-block pl-4 z-50 w-[500px]"
           ><img
-            class="w-[30%] md:w-[20%] text-[50px]"
+            class="w-[20%]"
             src="./assets/imgs/Asset 1.png"
             alt="modern printing and branding logo"
         /></a>
-        <button id="hamburger-el" class="lg:hidden z-50" aria-label="Main Menu">
+        <button
+          id="hamburger-el"
+          class="lg:hidden z-50 p-0"
+          aria-label="Main Menu"
+        >
           <svg width="100" height="50" viewBox="0 0 100 100">
             <path
               class="line line1 z-50"
@@ -107,7 +111,11 @@
               <ul
                 class="dropdown-menu lg:border-t-4 border-sky-900 flex flex-col gap-2 lg:shadow-xl lg:rounded-md bg-white"
               >
-                <li><a class="font-medium" href="#">Safety footwear</a></li>
+                <li>
+                  <a class="font-medium" href="/pages/footwear.html"
+                    >Safety footwear</a
+                  >
+                </li>
                 <li><a class="font-medium" href="#">Hand protection</a></li>
                 <li><a class="font-medium" href="#">Workwear</a></li>
                 <li><a class="font-medium" href="#">Reflective gear</a></li>
@@ -183,24 +191,28 @@
       <div
         class="lg:container mx-auto text-center w-[90%] z-10 animate__animated animate__fadeInUp"
       >
-        <h1 class="text-3xl md:text-5xl mb-4 font-bold tracking-wider">
-          <span class="text-yellow-500">Your Trusted Partner</span> in PPE
-          Supply & Custom Branding
+        <h1
+          class="text-3xl md:text-6xl mb-2 font-bold text-yellow-500 tracking-wider"
+        >
+          Your Trusted Partner
         </h1>
-        <p class="mb-4 text-xl md:text-2xl font-light">
+        <p class="text-xl md:text-3xl tracking-wide font-medium mb-2">
+          in PPE Supply & Custom Branding
+        </p>
+        <p class="mb-4 text-xl md:text-3xl font-medium">
           From Safety Gear to Promotional Materials, We’ve Got You Covered
         </p>
 
         <div class="mb-4">
           <span
-            class="typewriter-text font-light"
+            class="typewriter-text font-medium text-xl md:text-3xl"
             data-wait="1000"
             data-words='["Corporate clothing","Promotional material","PPE","commercial Printing","Welding Equipment","Tools"]'
           ></span>
         </div>
         <a
           href="#"
-          class="border-2 border-yellow-500 font-semibold tracking-wide px-2 py-4 rounded-xl inline-block"
+          class="bg-yellow-500 capitalize tracking-wider font-semibold px-2 py-4 rounded-xl inline-block"
         >
           view Catalogue
         </a>
@@ -210,11 +222,11 @@
       <section class="py-10">
         <div class="lg:container mx-auto w-[90%] text-center">
           <h1
-            class="text-3xl md:text-4xl text-center text-yellow-500 tracking-wide font-bold mb-4"
+            class="text-3xl md:text-6xl text-center text-yellow-500 tracking-wide font-bold mb-4"
           >
             Welcome
           </h1>
-          <p class="text-2xl md:text-3xl font-light">
+          <p class="text-2xl max-w-prose mx-auto md:text-3xl font-light">
             To modern printing and branding where we specialize in providing
             top-quality
             <span class="text-sky-800"
@@ -257,22 +269,20 @@
       >
         <div class="absolute inset-0 bg-black opacity-50 z-10"></div>
         <div class="text-white text-center z-20">
-          <h2 class="text-2xl font-bold mb-4">Saftey footwear</h2>
-          <p class="font-semibold mb-4">
+          <h2 class="text-2xl font-bold mb-4 capitalize">Saftey footwear</h2>
+          <p class="font-semibold mb-4 capitalize">
             Browse our Catalogue of safety footwear
           </p>
           <a
             href="#"
-            class="border-2 border-yellow-500 rounded-xl p-4 text-white text-xl inline-block"
+            class="border-2 capitalize border-yellow-500 rounded-xl p-4 text-white text-xl inline-block"
             >Browse range</a
           >
         </div>
       </section>
       <section>
         <div class="lg:container mx-auto w-[90%] mt-8">
-          <div
-            class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 grid-rows-2 h-full gap-4"
-          >
+          <div class="grid grid-cols-2 md:grid-cols-3 grid-rows-2 h-full gap-4">
             <div
               class="flex flex-col items-center justify-between text-center border-2 border-sky-700 rounded"
             >
@@ -565,7 +575,7 @@
       </section>
       <section>
         <h3
-          class="text-3xl text-center font-semibold tracking-wider text-sky-800"
+          class="text-3xl md:text-5xl mb-10 text-center font-semibold tracking-wider text-sky-800"
         >
           Featured
         </h3>
@@ -673,7 +683,7 @@
         </div>
       </section>
       <section
-        class="py-10 bg-gradient-to-bl from-cyan-700 to-blue-700 text-white"
+        class="py-28 bg-gradient-to-bl from-cyan-700 to-blue-700 text-white"
       >
         <div
           class="lg:container mx-auto flex flex-col justify-center items-center px-4"
@@ -711,71 +721,130 @@
           </div> -->
         </div>
       </section>
-      <section>
-        <div class="lg:container mx-auto py-10">
+      <section class="py-28">
+        <div class="lg:container mx-auto">
           <h3
-            class="text-3xl text-center tracking-wider text-sky-700 font-semibold mb-8"
+            class="text-3xl md:text-5xl text-center tracking-wider text-sky-700 font-semibold mb-10"
           >
             Our Services
           </h3>
           <div
-            class="w-[90%] mx-auto flex flex-row flex-nowrap overflow-x-auto snap-x snap-mandatory scroll-smooth md:grid md:grid-cols-service-cards gap-5"
+            class="w-[90%] mx-auto flex flex-row flex-nowrap overflow-x-auto snap-x snap-mandatory scroll-smooth md:grid grid-cols-service-cards gap-5"
           >
             <div
-              class="flex flex-col justify-between gap-3 bg-gradient-to-bl from-cyan-700 to-blue-700 text-white snap-start basis-60 shrink-0 pt-5 pr-4 pb-4 pl-4 rounded shadow-lg"
+              class="text-white snap-start basis-80 shrink-0 rounded shadow-lg flex flex-col"
             >
-              <h2 class="text-xl font-semibold tracking-wide">
-                Commercial Printing, Offset & Digital
-              </h2>
-              <p class="font-light">Brochures, booklets, bannaers, gazebos</p>
-              <a href="#" class="inline-block">Learn more</a>
+              <div class="h-44 lg:h-36">
+                <img
+                  src="/assets/imgs/better imgs/brochure.jfif"
+                  alt="commercial print items"
+                  class="object-cover"
+                />
+              </div>
+              <div
+                class="flex flex-col justify-center border-2 border-white gap-3 bg-gradient-to-bl from-cyan-700 to-blue-700 pt-5 pr-4 pb-4 pl-4 h-full"
+              >
+                <h2 class="text-xl font-semibold tracking-wide">
+                  Commercial Printing, Offset & Digital
+                </h2>
+                <p class="font-light">Brochures, booklets, bannaers, gazebos</p>
+                <a href="#" class="inline-block">Learn more</a>
+              </div>
             </div>
 
             <div
-              class="flex flex-col justify-between gap-3 bg-gradient-to-bl from-cyan-700 to-blue-700 text-white snap-start basis-60 shrink-0 pt-5 pr-4 pb-4 pl-4 rounded shadow-lg"
+              class="text-white snap-start basis-80 shrink-0 rounded shadow-lg flex flex-col"
             >
-              <h2 class="text-xl font-semibold tracking-wide">
-                Corporate Uniforms
-              </h2>
-              <p class="font-light">
-                Professional attire that represent your brand with pride and
-                distiction.
-              </p>
-              <a href="#" class="inline-block">Learn more</a>
+              <div class="">
+                <img
+                  src="/assets/imgs/better imgs/corporate-uniforms.webp"
+                  alt=""
+                  class="object-contain"
+                  height=""
+                />
+              </div>
+              <div
+                class="flex flex-col justify-center gap-3 bg-gradient-to-bl from-cyan-700 to-blue-700 pt-5 pr-4 pb-4 pl-4 h-full"
+              >
+                <h2 class="text-xl font-semibold tracking-wide">
+                  Corporate Uniforms
+                </h2>
+                <p class="font-light">
+                  Professional attire that represent your brand with pride and
+                  distiction.
+                </p>
+                <a href="#" class="inline-block">Learn more</a>
+              </div>
             </div>
             <div
-              class="flex flex-col justify-between gap-3 bg-gradient-to-bl from-cyan-700 to-blue-700 text-white snap-start basis-60 shrink-0 pt-5 pr-4 pb-4 pl-4 rounded shadow-lg"
+              class="flex flex-col text-white snap-start basis-80 shrink-0 rounded shadow-lg"
             >
-              <h2 class="text-xl font-semibold tracking-wide">
-                Promotional materials
-              </h2>
-              <p class="font-light">
-                Eye-catching designs that make your marketing efforts truly
-                standout.
-              </p>
-              <a href="#" class="inline-block">Learn more</a>
+              <div class="h-44 lg:h-36">
+                <img
+                  src="/assets/imgs/better imgs/gift-items-business-corporate-identity-vector-abstract-color-promotional-souvenirs-design-origami-elements-diagonal-lines-104917727.webp"
+                  alt=""
+                  class="object-cover"
+                  height=""
+                />
+              </div>
+              <div
+                class="flex flex-col justify-center gap-3 bg-gradient-to-bl from-cyan-700 to-blue-700 pt-5 pr-4 pb-4 pl-4 h-full"
+              >
+                <h2 class="text-xl font-semibold tracking-wide">
+                  Promotional materials
+                </h2>
+                <p class="font-light">
+                  Eye-catching designs that make your marketing efforts truly
+                  standout.
+                </p>
+                <a href="#" class="inline-block">Learn more</a>
+              </div>
             </div>
             <div
-              class="flex flex-col justify-between gap-3 bg-gradient-to-bl from-cyan-700 to-blue-700 text-white snap-start basis-60 shrink-0 pt-5 pr-4 pb-4 pl-4 rounded shadow-lg"
+              class="flex flex-col text-white snap-start basis-80 shrink-0 rounded shadow-lg"
             >
-              <h2 class="text-xl font-semibold tracking-wide">
-                Branding & Screen Printing
-              </h2>
-              <p class="font-light">
-                Branding of uniforms, PPE, t-shirts, Golf-shorts, Pens, diaries,
-                Vehicles
-              </p>
-              <a href="#" class="inline-block">Learn more</a>
+              <div class="">
+                <img
+                  src="/assets/imgs/better imgs/1-Screen-Printing.jpg"
+                  class="object-contain"
+                  height=""
+                  alt=""
+                />
+              </div>
+              <div
+                class="flex flex-col justify-center gap-3 bg-gradient-to-bl from-cyan-700 to-blue-700 pt-5 pr-4 pb-4 pl-4 h-full"
+              >
+                <h2 class="text-xl font-semibold tracking-wide">
+                  Branding & Screen Printing
+                </h2>
+                <p class="font-light">
+                  Branding of uniforms, PPE, t-shirts, Golf-shorts, Pens,
+                  diaries, Vehicles
+                </p>
+                <a href="#" class="inline-block">Learn more</a>
+              </div>
             </div>
             <div
-              class="flex flex-col justify-between gap-3 bg-gradient-to-bl from-cyan-700 to-blue-700 text-white snap-start basis-60 shrink-0 pt-5 pr-4 pb-4 pl-4 rounded shadow-lg"
+              class="flex flex-col text-white snap-start basis-80 shrink-0 rounded shadow-lg"
             >
-              <h2 class="text-xl font-semibold tracking-wide">Embroidery</h2>
-              <p class="font-light">
-                We weave your logo or design directly into various materials,
-                creating durable, professional, and visually striking results.
-              </p>
-              <a href="#" class="inline-block">Learn more</a>
+              <div class="">
+                <img
+                  src="/assets/imgs/better imgs/Logo-for-Embroidery.jpg"
+                  class="object-cover"
+                  alt=""
+                  height=""
+                />
+              </div>
+              <div
+                class="flex flex-col justify-center gap-3 bg-gradient-to-bl from-cyan-700 to-blue-700 pt-5 pr-4 pb-4 pl-4 h-full"
+              >
+                <h2 class="text-xl font-semibold tracking-wide">Embroidery</h2>
+                <p class="font-light">
+                  We weave your logo or design directly into various materials,
+                  creating durable, professional, and visually striking results.
+                </p>
+                <a href="#" class="inline-block">Learn more</a>
+              </div>
             </div>
           </div>
         </div>
@@ -783,117 +852,137 @@
       <section class="py-10">
         <div class="w-[90%] lg:container mx-auto">
           <h3
-            class="text-3xl text-center font-semibold mb-8 text-sky-700 tracking-wider"
+            class="text-3xl md:text-5xl text-center font-semibold mb-10 text-sky-700 tracking-wider"
           >
             Featured branded products
           </h3>
-          <div class="grid grid-cols-2 md:grid-cols-3 h-full gap-4">
-            <div
-              class="flex flex-col items-center justify-center text-center py-4 border-2 border-gray-500"
-            >
-              <img
-                src="/assets/imgs/gazebo-1-300x300.webp"
-                class="object-cover"
-                alt="branded gazebo"
-              />
-              <p class="font-semibold mb-4 mt-0">Branded Gazebo</p>
-              <a
-                href="#"
-                class="p-4 border-2 border-yellow-500 rounded inline-block"
-                >View product</a
+          <div class="h-full grid grid-cols-2 md:grid-cols-3 gap-3">
+            <div class="w-full max-w-sm mx-auto">
+              <div
+                class="flex flex-col items-center justify-center text-center py-4 border-2 border-gray-500 h-full"
               >
+                <img
+                  src="/assets/imgs/gazebo-1-300x300.webp"
+                  class="object-cover"
+                  alt="branded gazebo"
+                />
+                <p class="font-semibold mb-4 mt-0">Branded Gazebo</p>
+                <a
+                  href="#"
+                  class="p-4 border-2 border-yellow-500 rounded inline-block"
+                  >View product</a
+                >
+              </div>
             </div>
-            <div
-              class="flex flex-col items-center justify-center text-center py-4 border-2 border-gray-500"
-            >
-              <img
-                src="/assets/imgs/gx-box-300x300.webp"
-                class="object-cover"
-                alt="branded gazebo"
-              />
-              <p class="font-semibold mb-4">Branded Kiosk</p>
-              <a
-                href="#"
-                class="p-4 border-2 border-yellow-500 rounded inline-block"
-                >View product</a
+
+            <div class="w-full max-w-sm mx-auto">
+              <div
+                class="flex flex-col items-center justify-center text-center py-4 border-2 border-gray-500 h-full"
               >
+                <img
+                  src="/assets/imgs/gx-box-300x300.webp"
+                  class="object-cover"
+                  alt="branded gazebo"
+                />
+                <p class="font-semibold mb-4">Branded Kiosk</p>
+                <a
+                  href="#"
+                  class="p-4 border-2 border-yellow-500 rounded inline-block"
+                  >View product</a
+                >
+              </div>
             </div>
-            <div
-              class="flex flex-col items-center justify-center text-center py-4 border-2 border-gray-500"
-            >
-              <img
-                src="/assets/imgs/x-frame-banner-300x300.webp"
-                class="object-cover"
-                alt="branded gazebo"
-              />
-              <p class="font-semibold mb-4 mt-0">X-frame Banner</p>
-              <a
-                href="#"
-                class="p-4 border-2 border-yellow-500 rounded inline-block"
-                >View product</a
+
+            <div class="w-full max-w-sm mx-auto">
+              <div
+                class="flex flex-col items-center justify-center text-center py-4 border-2 border-gray-500 h-full"
               >
+                <img
+                  src="/assets/imgs/x-frame-banner-300x300.webp"
+                  class="object-cover"
+                  alt="branded gazebo"
+                />
+                <p class="font-semibold mb-4 mt-0">X-frame Banner</p>
+                <a
+                  href="#"
+                  class="p-4 border-2 border-yellow-500 rounded inline-block"
+                  >View product</a
+                >
+              </div>
             </div>
-            <div
-              class="flex flex-col items-center justify-center text-center py-4 border-2 border-gray-500"
-            >
-              <img
-                src="/assets/imgs/parasols-300x300.webp"
-                class="object-cover"
-                alt="branded gazebo"
-              />
-              <p class="font-semibold mb-4 mt-0">Parasol</p>
-              <a
-                href="#"
-                class="p-4 border-2 border-yellow-500 rounded inline-block"
-                >View product</a
+
+            <div class="w-full max-w-sm mx-auto">
+              <div
+                class="flex flex-col items-center justify-center text-center py-4 border-2 border-gray-500 h-full"
               >
+                <img
+                  src="/assets/imgs/parasols-300x300.webp"
+                  class="object-cover"
+                  alt="branded gazebo"
+                />
+                <p class="font-semibold mb-4 mt-0">Parasol</p>
+                <a
+                  href="#"
+                  class="p-4 border-2 border-yellow-500 rounded inline-block"
+                  >View product</a
+                >
+              </div>
             </div>
-            <div
-              class="flex flex-col items-center justify-center text-center py-4 border-2 border-gray-500"
-            >
-              <img
-                src="/assets/imgs/bomba-jacket-300x300.webp"
-                class="object-cover"
-                alt="branded gazebo"
-              />
-              <p class="font-semibold mb-4 mt-0">Bomba Jacket</p>
-              <a
-                href="#"
-                class="p-4 border-2 border-yellow-500 rounded inline-block"
-                >View product</a
+
+            <div class="w-full max-w-sm mx-auto">
+              <div
+                class="flex flex-col items-center justify-center text-center py-4 border-2 border-gray-500 h-full"
               >
+                <img
+                  src="/assets/imgs/bomba-jacket-300x300.webp"
+                  class="object-cover"
+                  alt="branded gazebo"
+                />
+                <p class="font-semibold mb-4 mt-0">Bomba Jacket</p>
+                <a
+                  href="#"
+                  class="p-4 border-2 border-yellow-500 rounded inline-block"
+                  >View product</a
+                >
+              </div>
             </div>
-            <div
-              class="flex flex-col items-center justify-center text-center py-4 border-2 border-gray-500"
-            >
-              <img
-                src="/assets/imgs/tab-300x300.jpg"
-                class="object-cover"
-                alt="branded gazebo"
-              />
-              <p class="font-semibold mb-4 mt-0">Branded Table Cloth</p>
-              <a
-                href="#"
-                class="p-4 border-2 border-yellow-500 rounded inline-block"
-                >View product</a
+
+            <div class="w-full max-w-sm mx-auto">
+              <div
+                class="flex flex-col items-center justify-center text-center py-4 border-2 border-gray-500 h-full"
               >
+                <img
+                  src="/assets/imgs/tab-300x300.jpg"
+                  class="object-cover"
+                  alt="branded gazebo"
+                />
+                <p class="font-semibold mb-4 mt-0">Branded Table Cloth</p>
+                <a
+                  href="#"
+                  class="p-4 border-2 border-yellow-500 rounded inline-block"
+                  >View product</a
+                >
+              </div>
             </div>
-            <div
-              class="flex flex-col items-center justify-center text-center py-4 border-2 border-gray-500"
-            >
-              <img
-                src="/assets/imgs/custom-branded-pens.jfif"
-                class="object-cover w-[50%]"
-                alt="branded gazebo"
-              />
-              <p class="font-semibold mb-4 mt-0">
-                custom branded and Promotional Pens
-              </p>
-              <a
-                href="#"
-                class="p-4 border-2 border-yellow-500 rounded inline-block"
-                >View product</a
+
+            <div class="w-full max-w-sm mx-auto">
+              <div
+                class="flex flex-col items-center justify-center text-center py-4 border-2 border-gray-500 h-full"
               >
+                <img
+                  src="/assets/imgs/custom-branded-pens.jfif"
+                  class="object-cover"
+                  alt="branded gazebo"
+                />
+                <p class="font-semibold mb-4 mt-0">
+                  custom branded and Promotional Pens
+                </p>
+                <a
+                  href="#"
+                  class="p-4 border-2 border-yellow-500 rounded inline-block"
+                  >View product</a
+                >
+              </div>
             </div>
           </div>
         </div>

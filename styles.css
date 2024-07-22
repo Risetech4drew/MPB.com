@@ -286,3 +286,7 @@ body {
   top: 0;
   left: 0; */
 }
+
+.hero__text-container {
+  max-inline-size: 50ch;
+}

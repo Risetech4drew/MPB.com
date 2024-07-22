@@ -9,6 +9,9 @@ module.exports = {
       gridTemplateColumns: {
         "service-cards": "repeat(auto-fill,minmax(15em,1fr))",
       },
+      height: {
+        100: "30rem",
+      },
     },
     container: {
       center: true,
