@@ -5,9 +5,11 @@ module.exports = {
     extend: {
       backgroundImage: {
         hero: "url('/assets/imgs/PPE.jpg')",
+        footwear:
+          "url('/assets/imgs/expert-advice-safety-footwear-resources-boot.jpg')",
       },
       gridTemplateColumns: {
-        "service-cards": "repeat(auto-fill,minmax(20em,1fr))",
+        "service-cards": "repeat(3,minmax(20em,1fr))",
       },
       height: {
         100: "30rem",
