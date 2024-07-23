@@ -1883,6 +1883,10 @@ video {
   border-radius: 0.75rem;
 }
 
+.rounded-md {
+  border-radius: 0.375rem;
+}
+
 .rounded-b {
   border-bottom-right-radius: 0.25rem;
   border-bottom-left-radius: 0.25rem;
@@ -1911,6 +1915,16 @@ video {
 .rounded-t {
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 0.25rem;
+}
+
+.rounded-b-md {
+  border-bottom-right-radius: 0.375rem;
+  border-bottom-left-radius: 0.375rem;
+}
+
+.rounded-t-md {
+  border-top-left-radius: 0.375rem;
+  border-top-right-radius: 0.375rem;
 }
 
 .rounded-bl {
@@ -2066,6 +2080,10 @@ video {
   background-color: rgb(234 179 8 / var(--tw-bg-opacity));
 }
 
+.bg-footwear {
+  background-image: url('/assets/imgs/expert-advice-safety-footwear-resources-boot.jpg');
+}
+
 .bg-gradient-to-b {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
@@ -2076,10 +2094,6 @@ video {
 
 .bg-hero {
   background-image: url('/assets/imgs/PPE.jpg');
-}
-
-.bg-footwear {
-  background-image: url('/assets/imgs/expert-advice-safety-footwear-resources-boot.jpg');
 }
 
 .from-black\/10 {
@@ -3410,6 +3424,10 @@ body {
 
   .md\:place-self-center {
     place-self: center;
+  }
+
+  .md\:bg-fixed {
+    background-attachment: fixed;
   }
 
   .md\:text-2xl {
