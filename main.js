@@ -194,7 +194,7 @@
 
     new TypeWritter(textElement, words, wait);
   }
-  initTypeWritter();
+  // initTypeWritter();
 
   // swiper
   new Swiper(".itemSwiper", {
