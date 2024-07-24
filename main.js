@@ -188,13 +188,15 @@
   }
 
   function initTypeWritter() {
-    const textElement = document.querySelector(".typewriter-text");
-    const words = JSON.parse(textElement.getAttribute("data-words"));
-    const wait = textElement.getAttribute("data-wait");
+    if (select(".typewriter-text")) {
+      const textElement = document.querySelector(".typewriter-text");
+      const words = JSON.parse(textElement.getAttribute("data-words"));
+      const wait = textElement.getAttribute("data-wait");
 
-    new TypeWritter(textElement, words, wait);
+      new TypeWritter(textElement, words, wait);
+    }
   }
-  // initTypeWritter();
+  initTypeWritter();
 
   // swiper
   new Swiper(".itemSwiper", {
@@ -223,10 +225,12 @@
 
   // date function
   const setYear = () => {
-    const dateEl = select("#date-el");
-    let date = new Date();
-    let year = date.getFullYear();
-    dateEl.textContent = year;
+    if (select("#date-el")) {
+      const dateEl = select("#date-el");
+      let date = new Date();
+      let year = date.getFullYear();
+      dateEl.textContent = year;
+    }
   };
   setYear();
 })();
