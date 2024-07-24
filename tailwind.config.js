@@ -8,6 +8,11 @@ module.exports = {
         footwear:
           "url('/assets/imgs/expert-advice-safety-footwear-resources-boot.jpg')",
         safetyfootwear: "url('/assets/imgs/better imgs/safetyfootwearbg.jpg')",
+        handprotection:
+          "url('/assets/imgs/better imgs/Handprotection-hero-bg.webp')",
+        reflectivewear:
+          "url('/assets/imgs/better imgs/hero-bg-reflective-wear.jpg')",
+        workwear: "url('/assets/imgs/better imgs/workwear-bg.webp')",
       },
       gridTemplateColumns: {
         "service-cards": "repeat(3,minmax(20em,1fr))",

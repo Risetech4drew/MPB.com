@@ -2083,12 +2083,24 @@ video {
   background-image: linear-gradient(to bottom left, var(--tw-gradient-stops));
 }
 
+.bg-handprotection {
+  background-image: url('/assets/imgs/better imgs/Handprotection-hero-bg.webp');
+}
+
 .bg-hero {
   background-image: url('/assets/imgs/PPE.jpg');
 }
 
+.bg-reflectivewear {
+  background-image: url('/assets/imgs/better imgs/hero-bg-reflective-wear.jpg');
+}
+
 .bg-safetyfootwear {
   background-image: url('/assets/imgs/better imgs/safetyfootwearbg.jpg');
+}
+
+.bg-workwear {
+  background-image: url('/assets/imgs/better imgs/workwear-bg.webp');
 }
 
 .from-black\/10 {
@@ -3401,6 +3413,11 @@ body {
 
   .md\:bg-fixed {
     background-attachment: fixed;
+  }
+
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 
   .md\:text-3xl {
