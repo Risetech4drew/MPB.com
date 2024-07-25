@@ -2099,6 +2099,10 @@ video {
   background-image: url('/assets/imgs/better imgs/safetyfootwearbg.jpg');
 }
 
+.bg-tools {
+  background-image: url('/assets/imgs/better imgs/Tools/tools-bg.jpg');
+}
+
 .bg-welding {
   background-image: url('/assets/imgs/better imgs/welding/welding-bg.jfif');
 }
@@ -2107,8 +2111,8 @@ video {
   background-image: url('/assets/imgs/better imgs/workwear-bg.webp');
 }
 
-.bg-tools {
-  background-image: url('/assets/imgs/better imgs/Tools/tools-bg.jpg');
+.bg-roadsafety {
+  background-image: url('/assets/imgs/better imgs/roadsafety/rpadsafety-bg.jfif');
 }
 
 .from-black\/10 {

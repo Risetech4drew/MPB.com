@@ -15,6 +15,8 @@ module.exports = {
         workwear: "url('/assets/imgs/better imgs/workwear-bg.webp')",
         welding: "url('/assets/imgs/better imgs/welding/welding-bg.jfif')",
         tools: "url('/assets/imgs/better imgs/Tools/tools-bg.jpg')",
+        roadsafety:
+          "url('/assets/imgs/better imgs/roadsafety/rpadsafety-bg.jfif')",
       },
       gridTemplateColumns: {
         "service-cards": "repeat(3,minmax(20em,1fr))",
