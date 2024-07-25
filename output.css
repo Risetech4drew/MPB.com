@@ -2188,6 +2188,10 @@ video {
   background-position: center;
 }
 
+.bg-left {
+  background-position: left;
+}
+
 .bg-repeat {
   background-repeat: repeat;
 }
@@ -3426,6 +3430,10 @@ body {
 
   .md\:bg-fixed {
     background-attachment: fixed;
+  }
+
+  .md\:bg-center {
+    background-position: center;
   }
 
   .md\:text-2xl {
