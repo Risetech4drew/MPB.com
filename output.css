@@ -2103,6 +2103,10 @@ video {
   background-image: url('/assets/imgs/better imgs/workwear-bg.webp');
 }
 
+.bg-welding {
+  background-image: url('/assets/imgs/better imgs/welding/welding-bg.jfif');
+}
+
 .from-black\/10 {
   --tw-gradient-from: rgb(0 0 0 / 0.1) var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(0 0 0 / 0) var(--tw-gradient-to-position);
@@ -3438,11 +3442,6 @@ body {
   .md\:text-6xl {
     font-size: 3.75rem;
     line-height: 1;
-  }
-
-  .md\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
   }
 }
 
