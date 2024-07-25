@@ -14,6 +14,7 @@ module.exports = {
           "url('/assets/imgs/better imgs/hero-bg-reflective-wear.jpg')",
         workwear: "url('/assets/imgs/better imgs/workwear-bg.webp')",
         welding: "url('/assets/imgs/better imgs/welding/welding-bg.jfif')",
+        tools: "url('/assets/imgs/better imgs/Tools/tools-bg.jpg')",
       },
       gridTemplateColumns: {
         "service-cards": "repeat(3,minmax(20em,1fr))",

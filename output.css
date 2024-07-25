@@ -2099,12 +2099,16 @@ video {
   background-image: url('/assets/imgs/better imgs/safetyfootwearbg.jpg');
 }
 
+.bg-welding {
+  background-image: url('/assets/imgs/better imgs/welding/welding-bg.jfif');
+}
+
 .bg-workwear {
   background-image: url('/assets/imgs/better imgs/workwear-bg.webp');
 }
 
-.bg-welding {
-  background-image: url('/assets/imgs/better imgs/welding/welding-bg.jfif');
+.bg-tools {
+  background-image: url('/assets/imgs/better imgs/Tools/tools-bg.jpg');
 }
 
 .from-black\/10 {
@@ -2279,6 +2283,11 @@ video {
   padding-right: 1rem;
 }
 
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
 .py-10 {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
@@ -2297,11 +2306,6 @@ video {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
-
-.px-5 {
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
 }
 
 .pb-28 {
