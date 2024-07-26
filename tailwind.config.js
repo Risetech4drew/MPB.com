@@ -17,6 +17,10 @@ module.exports = {
         tools: "url('/assets/imgs/better imgs/Tools/tools-bg.jpg')",
         roadsafety:
           "url('/assets/imgs/better imgs/roadsafety/rpadsafety-bg.jfif')",
+        commercial:
+          "url('/assets/imgs/better imgs/commercial-printing/commercial-printing-bg.jpg')",
+        printingImage:
+          "url('/assets/imgs/better imgs/commercial-printing/side-picture.jfif')",
       },
       gridTemplateColumns: {
         "service-cards": "repeat(3,minmax(20em,1fr))",

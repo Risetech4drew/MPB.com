@@ -913,6 +913,10 @@ video {
   display: none;
 }
 
+.h-100 {
+  height: 30rem;
+}
+
 .h-16 {
   height: 4rem;
 }
@@ -933,6 +937,10 @@ video {
   height: 200px;
 }
 
+.h-\[50vh\] {
+  height: 50vh;
+}
+
 .h-full {
   height: 100%;
 }
@@ -947,6 +955,10 @@ video {
 
 .w-\[500px\] {
   width: 500px;
+}
+
+.w-\[80\%\] {
+  width: 80%;
 }
 
 .w-\[85\%\] {
@@ -2071,6 +2083,10 @@ video {
   background-color: rgb(234 179 8 / var(--tw-bg-opacity));
 }
 
+.bg-commercial {
+  background-image: url('/assets/imgs/better imgs/commercial-printing/commercial-printing-bg.jpg');
+}
+
 .bg-footwear {
   background-image: url('/assets/imgs/expert-advice-safety-footwear-resources-boot.jpg');
 }
@@ -2091,8 +2107,16 @@ video {
   background-image: url('/assets/imgs/PPE.jpg');
 }
 
+.bg-printingImage {
+  background-image: url('/assets/imgs/better imgs/commercial-printing/side-picture.jfif');
+}
+
 .bg-reflectivewear {
   background-image: url('/assets/imgs/better imgs/hero-bg-reflective-wear.jpg');
+}
+
+.bg-roadsafety {
+  background-image: url('/assets/imgs/better imgs/roadsafety/rpadsafety-bg.jfif');
 }
 
 .bg-safetyfootwear {
@@ -2109,10 +2133,6 @@ video {
 
 .bg-workwear {
   background-image: url('/assets/imgs/better imgs/workwear-bg.webp');
-}
-
-.bg-roadsafety {
-  background-image: url('/assets/imgs/better imgs/roadsafety/rpadsafety-bg.jfif');
 }
 
 .from-black\/10 {
@@ -2194,6 +2214,10 @@ video {
 
 .bg-left {
   background-position: left;
+}
+
+.bg-right-bottom {
+  background-position: right bottom;
 }
 
 .bg-repeat {
@@ -2316,6 +2340,11 @@ video {
   padding-bottom: 1rem;
 }
 
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
 .pb-28 {
   padding-bottom: 7rem;
 }
@@ -2404,6 +2433,11 @@ video {
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .text-lg {
@@ -2759,6 +2793,12 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.shadow-md {
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .shadow-xl {
   --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
@@ -2875,9 +2915,19 @@ video {
   transition-duration: 150ms;
 }
 
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .transition-opacity {
   transition-property: opacity;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.duration-150 {
   transition-duration: 150ms;
 }
 
@@ -3273,6 +3323,15 @@ body {
   max-inline-size: 50ch;
 }
 
+ul.breadcrumb li {
+  display: inline;
+}
+
+ul.breadcrumb li + li::before {
+  padding: 0.5em;
+  content: "/\00a0";
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
@@ -3306,6 +3365,44 @@ body {
 
   @media (min-width: 1536px) {
     .sm\:container {
+      max-width: 1536px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  @media (min-width: 640px) {
+    .md\:container {
+      max-width: 640px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .md\:container {
+      max-width: 768px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .md\:container {
+      max-width: 1024px;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .md\:container {
+      max-width: 1280px;
+    }
+  }
+
+  @media (min-width: 1536px) {
+    .md\:container {
       max-width: 1536px;
     }
   }
@@ -3353,6 +3450,11 @@ body {
   font-weight: 700;
 }
 
+.hover\:text-sky-700:hover {
+  --tw-text-opacity: 1;
+  color: rgb(3 105 161 / var(--tw-text-opacity));
+}
+
 .before\:hover\:text-center:hover::before {
   content: var(--tw-content);
   text-align: center;
@@ -3396,6 +3498,10 @@ body {
 
   .md\:h-80 {
     height: 20rem;
+  }
+
+  .md\:h-auto {
+    height: auto;
   }
 
   .md\:w-\[80\%\] {
