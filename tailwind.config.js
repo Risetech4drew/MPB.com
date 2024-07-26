@@ -21,6 +21,8 @@ module.exports = {
           "url('/assets/imgs/better imgs/commercial-printing/commercial-printing-bg.jpg')",
         printingImage:
           "url('/assets/imgs/better imgs/commercial-printing/side-picture.jfif')",
+        corporate:
+          "url('/assets/imgs/better imgs/corporate-uniforms/corporate-uni-bg.jpg')",
       },
       gridTemplateColumns: {
         "service-cards": "repeat(3,minmax(20em,1fr))",

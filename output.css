@@ -709,6 +709,10 @@ video {
   z-index: 50;
 }
 
+.row-span-1 {
+  grid-row: span 1 / span 1;
+}
+
 .float-start {
   float: inline-start;
 }
@@ -945,6 +949,14 @@ video {
   height: 100%;
 }
 
+.h-auto {
+  height: auto;
+}
+
+.h-96 {
+  height: 24rem;
+}
+
 .min-h-14 {
   min-height: 3.5rem;
 }
@@ -955,10 +967,6 @@ video {
 
 .w-\[500px\] {
   width: 500px;
-}
-
-.w-\[80\%\] {
-  width: 80%;
 }
 
 .w-\[85\%\] {
@@ -985,12 +993,52 @@ video {
   width: 100%;
 }
 
+.w-\[80\%\] {
+  width: 80%;
+}
+
+.w-\[50\%\] {
+  width: 50%;
+}
+
+.w-\[75\%\] {
+  width: 75%;
+}
+
+.w-\[70\%\] {
+  width: 70%;
+}
+
 .max-w-prose {
   max-width: 65ch;
 }
 
 .max-w-sm {
   max-width: 24rem;
+}
+
+.max-w-md {
+  max-width: 28rem;
+}
+
+.max-w-lg {
+  max-width: 32rem;
+}
+
+.max-w-xl {
+  max-width: 36rem;
+}
+
+.max-w-2xl {
+  max-width: 42rem;
+}
+
+.max-w-3xl {
+  max-width: 48rem;
+}
+
+.flex-1 {
+  flex: 1 1 0%;
 }
 
 .flex-shrink {
@@ -1019,6 +1067,10 @@ video {
 
 .basis-80 {
   flex-basis: 20rem;
+}
+
+.basis-\[500px\] {
+  flex-basis: 500px;
 }
 
 .table-auto {
@@ -1567,6 +1619,10 @@ video {
   gap: 2rem;
 }
 
+.gap-6 {
+  gap: 1.5rem;
+}
+
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
@@ -2058,6 +2114,21 @@ video {
   border-color: rgb(234 179 8 / var(--tw-border-opacity));
 }
 
+.border-red-600 {
+  --tw-border-opacity: 1;
+  border-color: rgb(220 38 38 / var(--tw-border-opacity));
+}
+
+.border-sky-950 {
+  --tw-border-opacity: 1;
+  border-color: rgb(8 47 73 / var(--tw-border-opacity));
+}
+
+.border-green-950 {
+  --tw-border-opacity: 1;
+  border-color: rgb(5 46 22 / var(--tw-border-opacity));
+}
+
 .bg-\[rgb\(255\2c 0\2c 0\)\] {
   --tw-bg-opacity: 1;
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
@@ -2085,6 +2156,10 @@ video {
 
 .bg-commercial {
   background-image: url('/assets/imgs/better imgs/commercial-printing/commercial-printing-bg.jpg');
+}
+
+.bg-corporate {
+  background-image: url('/assets/imgs/better imgs/corporate-uniforms/corporate-uni-bg.jpg');
 }
 
 .bg-footwear {
@@ -2343,6 +2418,11 @@ video {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.px-28 {
+  padding-left: 7rem;
+  padding-right: 7rem;
 }
 
 .pb-28 {
@@ -3484,6 +3564,11 @@ ul.breadcrumb li + li::before {
 }
 
 @media (min-width: 768px) {
+  .md\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .md\:flex {
     display: flex;
   }
@@ -3512,6 +3597,26 @@ ul.breadcrumb li + li::before {
     width: 85%;
   }
 
+  .md\:w-full {
+    width: 100%;
+  }
+
+  .md\:w-\[70\%\] {
+    width: 70%;
+  }
+
+  .md\:w-\[75\%\] {
+    width: 75%;
+  }
+
+  .md\:max-w-lg {
+    max-width: 32rem;
+  }
+
+  .md\:max-w-xl {
+    max-width: 36rem;
+  }
+
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -3522,6 +3627,10 @@ ul.breadcrumb li + li::before {
 
   .md\:flex-row {
     flex-direction: row;
+  }
+
+  .md\:items-center {
+    align-items: center;
   }
 
   .md\:justify-center {
