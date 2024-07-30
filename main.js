@@ -135,6 +135,32 @@
       }
     }
   });
+
+  // close mobile nav when overlay is clicked
+  on("click", ".overlay", (e) => {
+    const hamburger = select("#hamburger-el");
+    const navbar = select(".navbar");
+    const overlay = select(".overlay");
+
+    hamburger.classList.toggle("opened");
+    overlay.classList.toggle("active");
+    navbar.classList.toggle("navbar-active");
+
+    select(".menu > li", true).forEach((link, index) => {
+      if (link.style.animation) {
+        link.style.animation = "";
+      } else {
+        link.style.animation = `navlinkfade 0.5s ease forwards ${
+          index / 7 + 0.5
+        }s`;
+      }
+    });
+    navbar.classList.contains("navbar-active")
+      ? disableMainScroll()
+      : enableMainScroll();
+  });
+
+  // end
   // easy on scroll helper function
   const onscroll = (el, listener) => {
     el.addEventListener("scroll", listener);

@@ -709,10 +709,6 @@ video {
   z-index: 50;
 }
 
-.row-span-1 {
-  grid-row: span 1 / span 1;
-}
-
 .float-start {
   float: inline-start;
 }
@@ -929,6 +925,10 @@ video {
   height: 11rem;
 }
 
+.h-60 {
+  height: 15rem;
+}
+
 .h-64 {
   height: 16rem;
 }
@@ -937,8 +937,16 @@ video {
   height: 100vh;
 }
 
+.h-\[18\.5rem\] {
+  height: 18.5rem;
+}
+
 .h-\[200px\] {
   height: 200px;
+}
+
+.h-\[50\%\] {
+  height: 50%;
 }
 
 .h-\[50vh\] {
@@ -949,12 +957,13 @@ video {
   height: 100%;
 }
 
-.h-auto {
-  height: auto;
+.h-max {
+  height: -moz-max-content;
+  height: max-content;
 }
 
-.h-96 {
-  height: 24rem;
+.h-72 {
+  height: 18rem;
 }
 
 .min-h-14 {
@@ -993,52 +1002,12 @@ video {
   width: 100%;
 }
 
-.w-\[80\%\] {
-  width: 80%;
-}
-
-.w-\[50\%\] {
-  width: 50%;
-}
-
-.w-\[75\%\] {
-  width: 75%;
-}
-
-.w-\[70\%\] {
-  width: 70%;
-}
-
 .max-w-prose {
   max-width: 65ch;
 }
 
 .max-w-sm {
   max-width: 24rem;
-}
-
-.max-w-md {
-  max-width: 28rem;
-}
-
-.max-w-lg {
-  max-width: 32rem;
-}
-
-.max-w-xl {
-  max-width: 36rem;
-}
-
-.max-w-2xl {
-  max-width: 42rem;
-}
-
-.max-w-3xl {
-  max-width: 48rem;
-}
-
-.flex-1 {
-  flex: 1 1 0%;
 }
 
 .flex-shrink {
@@ -1065,12 +1034,12 @@ video {
   flex-grow: 1;
 }
 
-.basis-80 {
-  flex-basis: 20rem;
+.basis-52 {
+  flex-basis: 13rem;
 }
 
-.basis-\[500px\] {
-  flex-basis: 500px;
+.basis-80 {
+  flex-basis: 20rem;
 }
 
 .table-auto {
@@ -1619,10 +1588,6 @@ video {
   gap: 2rem;
 }
 
-.gap-6 {
-  gap: 1.5rem;
-}
-
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
@@ -2114,21 +2079,6 @@ video {
   border-color: rgb(234 179 8 / var(--tw-border-opacity));
 }
 
-.border-red-600 {
-  --tw-border-opacity: 1;
-  border-color: rgb(220 38 38 / var(--tw-border-opacity));
-}
-
-.border-sky-950 {
-  --tw-border-opacity: 1;
-  border-color: rgb(8 47 73 / var(--tw-border-opacity));
-}
-
-.border-green-950 {
-  --tw-border-opacity: 1;
-  border-color: rgb(5 46 22 / var(--tw-border-opacity));
-}
-
 .bg-\[rgb\(255\2c 0\2c 0\)\] {
   --tw-bg-opacity: 1;
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
@@ -2160,6 +2110,14 @@ video {
 
 .bg-corporate {
   background-image: url('/assets/imgs/better imgs/corporate-uniforms/corporate-uni-bg.jpg');
+}
+
+.bg-embroidedProducts {
+  background-image: url('/assets/imgs/better imgs/embroidery/featured-bg.jpg');
+}
+
+.bg-embroidery {
+  background-image: url('/assets/imgs/better imgs/embroidery/embroidery-bg-2.jpg');
 }
 
 .bg-footwear {
@@ -2418,11 +2376,6 @@ video {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-}
-
-.px-28 {
-  padding-left: 7rem;
-  padding-right: 7rem;
 }
 
 .pb-28 {
@@ -3564,11 +3517,6 @@ ul.breadcrumb li + li::before {
 }
 
 @media (min-width: 768px) {
-  .md\:mx-auto {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
   .md\:flex {
     display: flex;
   }
@@ -3589,24 +3537,16 @@ ul.breadcrumb li + li::before {
     height: auto;
   }
 
+  .md\:w-\[75\%\] {
+    width: 75%;
+  }
+
   .md\:w-\[80\%\] {
     width: 80%;
   }
 
   .md\:w-\[85\%\] {
     width: 85%;
-  }
-
-  .md\:w-full {
-    width: 100%;
-  }
-
-  .md\:w-\[70\%\] {
-    width: 70%;
-  }
-
-  .md\:w-\[75\%\] {
-    width: 75%;
   }
 
   .md\:max-w-lg {
@@ -3629,10 +3569,6 @@ ul.breadcrumb li + li::before {
     flex-direction: row;
   }
 
-  .md\:items-center {
-    align-items: center;
-  }
-
   .md\:justify-center {
     justify-content: center;
   }
@@ -3649,6 +3585,10 @@ ul.breadcrumb li + li::before {
 
   .md\:bg-fixed {
     background-attachment: fixed;
+  }
+
+  .md\:bg-bottom {
+    background-position: bottom;
   }
 
   .md\:bg-center {

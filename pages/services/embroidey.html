@@ -1,10 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-full">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- styles -->
     <link rel="stylesheet" href="/output.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <!-- font awesome -->
     <link
       rel="stylesheet"
@@ -13,7 +20,14 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <!-- scripts -->
     <script
       defer
@@ -21,7 +35,9 @@
     ></script>
     <script defer src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script defer src="/main.js"></script>
-    <title>reflective wear</title>
+
+    <!-- /scripts -->
+    <title>Commercial Printing</title>
   </head>
   <body>
     <header
@@ -39,8 +55,8 @@
         /></a>
         <button
           id="hamburger-el"
-          class="lg:hidden z-50"
-          aria-label="Toggle Hamburger Menu"
+          class="lg:hidden z-50 p-0"
+          aria-label="Main Menu"
         >
           <svg width="100" height="50" viewBox="0 0 100 100">
             <path
@@ -107,7 +123,11 @@
                     >Welding</a
                   >
                 </li>
-                <li><a class="font-medium" href="#">Tools</a></li>
+                <li>
+                  <a class="font-medium" href="/pages/catalogue/tools.html"
+                    >Tools</a
+                  >
+                </li>
               </ul>
             </li>
             <li class="relative py-2 dropdown lg:p-0">
@@ -183,225 +203,194 @@
     <span
       class="overlay fixed inset-0 bg-black opacity-0 invisible transition-opacity duration-300 ease-in-out z-30"
     ></span>
-    <main>
-      <section
-        class="relative bg-reflectivewear bg-scroll md:bg-fixed bg-cover bg-center bg-no-repeat flex flex-col justify-center items-center h-[100vh]"
+    <section
+      class="relative bg-embroidery bg-scroll md:bg-fixed bg-center md:bg-bottom bg-cover bg-no-repeat flex flex-col justify-center items-center h-[50vh]"
+    >
+      <div
+        class="w-[90%] lg:container text-yellow-500 text-center z-10"
+        data-aos="fade-down"
       >
-        <div
-          class="absolute w-[90%] lg:container mx-auto text-white flex flex-col justify-center items-center z-20"
+        <h1
+          class="text-2xl md:text-5xl font-semibold tracking-wide mb-4 capitalize"
         >
-          <h1
-            class="capitalize text-3xl md:text-5xl font-semibold tracking-wider mb-8 text-yellow-500"
-            data-aos="fade-down"
-          >
-            reflective wear
-          </h1>
-
-          <p
-            class="max-w-prose md:text-2xl tracking-wide text-center font-light mb-4"
-            data-aos="fade-up"
-          >
-            High-visibility clothing designed to reflect light. Crucial for
-            workers in environments with moving vehicles, machinery, or in
-            low-light conditions to prevent accidents and increase safety.
+          embroidery
+        </h1>
+        <ul>
+          <ul class="breadcrumb">
+            <li>
+              <a
+                href="/index.html"
+                class="hover:text-sky-700 transition-all duration-150 ease-in-out"
+                >home</a
+              >
+            </li>
+            <li>
+              <a
+                href="/index.html"
+                class="hover:text-sky-700 transition-all duration-150 ease-in-out"
+                >services</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-sky-700 transition-all duration-150 ease-in-out"
+                >embroidery</a
+              >
+            </li>
+          </ul>
+        </ul>
+      </div>
+      <div class="absolute inset-0 bg-black opacity-50 z-0"></div>
+    </section>
+    <span
+      class="overlay fixed inset-0 bg-black opacity-50 invisible transition-opacity duration-300 ease-in-out z-30"
+    ></span>
+    <main class="py-10">
+      <section
+        class="w-[90%] md:container mx-auto flex flex-col md:flex-row gap-4"
+      >
+        <div class="flex flex-col justify-center">
+          <p class="text-xl md:text-2xl max-w-prose text-justify tracking-wide">
+            Elevate your brand with us. We specialize in precision embroidery
+            for golf shirts, caps, hoodies, work suits, and uniforms. Our expert
+            craftsmanship brings your logo to life on fabric, creating a lasting
+            impression that wears well.
           </p>
-          <a
-            href="#"
-            class="inline-block p-4 bg-yellow-500 rounded-md font-semibold tracking-wide text-sky-800"
-            data-aos="fade-up"
-            >Contact Us</a
-          >
         </div>
-        <div class="absolute inset-0 bg-black opacity-50 z-10"></div>
+        <div
+          class="bg-embroidedProducts bg-cover bg-center bg-no-repeat rounded-md w-full h-72 shadow-md"
+        ></div>
       </section>
       <section class="py-28">
-        <div class="lg:container mx-auto w-[90%] mt-8">
+        <h2
+          class="text-3xl md:text-5xl text-sky-700 tracking-wide font-semibold text-center mb-8"
+        >
+          Categories
+        </h2>
+        <div
+          class="w-[85%] mx-auto grid grid-cols-1 md:grid-cols-3 gap-5"
+          data-aos="fade-up"
+        >
           <div
-            class="mx-auto grid grid-cols-2 md:grid-cols-3 grid-rows-2 h-full md:w-[85%] gap-4"
+            class="flex flex-col text-white snap-start basis-52 shrink-0 shadow-lg h-max"
           >
-            <div class="w-full max-w-sm mx-auto">
-              <div
-                class="flex flex-col items-center justify-between text-center border-2 border-sky-700 rounded"
-              >
-                <img
-                  src="/assets/imgs/better imgs/reflective-gear/thumbs_Reflective-Gear-Jacket-Yellow.jpg"
-                  class="h-[200px] object-contain"
-                  alt="safetyboot"
-                />
-                <div
-                  class="w-full min-h- bg-gradient-to-bl from-cyan-700 to-blue-700 p-4 text-white"
-                >
-                  <p class="font-light tracking-wider">Reflective Jacket</p>
-                </div>
-              </div>
+            <div class="h-60">
+              <!-- h-44 sm:h-48 md:h-52 -->
+              <img
+                src="/assets/imgs/better imgs/embroidery/caps.avif"
+                alt="commercial print items"
+                class="object-cover rounded-t-md"
+              />
+            </div>
+            <div
+              class="bg-gradient-to-bl from-cyan-700 to-blue-700 rounded-b-md pt-5 pr-4 pb-4 pl-4 h-[50%]"
+            >
+              <h2 class="text-xl font-semibold tracking-wide mb-3">Caps</h2>
+              <p class="font-light">
+                Experience excellence with our meticulously embroidered caps.
+                Crafted by skilled artisans, these caps showcase precision and
+                attention to detail, ensuring your brand stands out
+              </p>
+              <!-- <a href="#" class="inline-block">Learn more</a> -->
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col text-white snap-start basis-52 shrink-0 shadow-lg h-max overflow-y-hidden"
+          >
+            <div class="h-60">
+              <img
+                src="/assets/imgs/better imgs/embroidery/blue-golf-short-sleeve-shirt.webp"
+                alt=""
+                class="object-cover rounded-t-md"
+                height=""
+              />
             </div>
 
-            <div class="w-full max-w-sm mx-auto">
-              <div
-                class="flex flex-col items-center justify-between rounded text-center border-2 border-sky-700"
-              >
-                <img
-                  src="/assets/imgs/better imgs/reflective-gear/thumbs_Reflective-Gear-Suit-Orange.jpg"
-                  class="h-[200px] object-contain"
-                  alt="safetyboot"
-                />
-                <div
-                  class="w-full min-h-14 bg-gradient-to-bl from-cyan-700 to-blue-700 text-white p-4"
-                >
-                  <p class="font-light tracking-wide">Reflective Gear Orange</p>
-                </div>
-              </div>
+            <div
+              class="bg-gradient-to-bl from-cyan-700 to-blue-700 rounded-b-md pt-5 pr-4 pb-4 pl-4 h-[50%]"
+            >
+              <h2 class="text-xl font-semibold tracking-wide mb-3">
+                Golf Shirts
+              </h2>
+              <p class="font-light">
+                Our golf shirts boast impeccable embroidery, a testament to our
+                commitment to quality. Elevate your brand image with shirts that
+                exude professionalism and craftsmanship.
+              </p>
+              <!-- <a href="#" class="inline-block">Learn more</a> -->
             </div>
+          </div>
 
-            <div class="w-full max-w-sm mx-auto">
-              <div
-                class="flex flex-col items-center justify-between text-center border-2 border-sky-700 rounded"
-              >
-                <img
-                  src="/assets/imgs/better imgs/reflective-gear/thumbs_Reflective-Gear-Vest-Blue.jpg"
-                  class="h-[200px] object-contain"
-                  alt="safetyboot"
-                />
-                <div
-                  class="w-full min-h-14 bg-gradient-to-bl from-cyan-700 to-blue-700 p-4 text-white"
-                >
-                  <p class="font-light">Reflective Vest Blue</p>
-                </div>
-              </div>
+          <div
+            class="flex flex-col text-white snap-start basis-52 shrink-0 shadow-lg h-max overflow-y-hidden"
+          >
+            <div class="h-60">
+              <img
+                src="/assets/imgs/better imgs/embroidery/work-shirt.jfif"
+                class="object-contain rounded-t-md"
+                height=""
+                alt=""
+              />
             </div>
-
-            <div class="w-full max-w-sm mx-auto">
-              <div
-                class="flex flex-col items-center justify-between text-center border-2 border-sky-700 rounded"
-              >
-                <img
-                  src="/assets/imgs/better imgs/reflective-gear/Value-Lime-Reflective-Vest-with-Zip-ID-Pocket-copy-300x300.jpg"
-                  class="h-[200px] object-contain"
-                  alt="safetyboot"
-                />
-                <div
-                  class="w-full min-h-14 bg-gradient-to-bl from-cyan-700 to-blue-700 text-white p-4"
-                >
-                  <p class="font-light tracking-wide">
-                    Reflective Vest with Zip ID Pocket
-                  </p>
-                </div>
-              </div>
+            <div
+              class="bg-gradient-to-bl from-cyan-700 to-blue-700 rounded-b-md pt-5 pr-4 pb-4 pl-4 h-[50%]"
+            >
+              <h2 class="text-xl font-semibold tracking-wide mb-3">
+                Work shirts
+              </h2>
+              Workwear meets professionalism in our logo-embroidered work
+              shirts. Durable, comfortable, and branded, they’re ideal for a
+              polished look in any industry.
+              <!-- <a href="#" class="inline-block">Learn more</a> -->
             </div>
-
-            <div class="w-full max-w-sm mx-auto">
-              <div
-                class="flex flex-col items-center justify-between text-center border-2 border-sky-700 rounded"
-              >
-                <img
-                  src="/assets/imgs/better imgs/reflective-gear/reflective-bunny-jacket.jpg"
-                  class="h-[200px] object-contain"
-                  alt="safetyboot"
-                />
-                <div
-                  class="w-full min-h-14 bg-gradient-to-bl from-cyan-700 to-blue-700 text-white p-4"
-                >
-                  <p class="font-light tracking-wide">
-                    Reflective Bunny Jacket
-                  </p>
-                </div>
-              </div>
+          </div>
+          <div
+            class="flex flex-col text-white snap-start basis-80 shrink-0 h-max overflow-y-hidden rounded shadow-lg"
+          >
+            <div class="h-60">
+              <img
+                src="/assets/imgs/better imgs/embroidery/black-v-neck-sweater.webp"
+                class="object-cover rounded-t-md"
+                alt=""
+                height=""
+              />
             </div>
-
-            <!-- <div class="w-full max-w-sm mx-auto">
-              <div
-                class="flex flex-col items-center justify-between text-center border-2 border-sky-700 rounded"
-              >
-                <img
-                  src="/assets/imgs/better imgs/Safety-Gumboots-with-Steel-Toe.jpg"
-                  class="h-[200px] object-contain"
-                  alt="safetyboot"
-                />
-                <div
-                  class="w-full min-h-14 bg-gradient-to-bl from-cyan-700 to-blue-700 text-white p-4"
-                >
-                  <p class="font-light tracking-wide">
-                    Safety gumboots with Steel toe
-                  </p>
-                </div>
-              </div>
+            <div
+              class="bg-gradient-to-bl from-cyan-700 to-blue-700 rounded-b-md pt-5 pr-4 pb-4 pl-4 h-[50%]"
+            >
+              <h2 class="text-xl font-semibold tracking-wide mb-3">Sweaters</h2>
+              <p class="font-light">
+                Wrap yourself in sophistication with our personalized sweaters.
+                Expertly embroidered, they embody the essence of craftsmanship
+                and durability.
+              </p>
+              <!-- <a href="#" class="inline-block">Learn more</a> -->
             </div>
-
-            <div class="w-full max-w-sm mx-auto">
-              <div
-                class="flex flex-col items-center justify-between text-center border-2 border-sky-700 rounded"
-              >
-                <img
-                  src="/assets/imgs/better imgs/Puncture-resistant-work-boots.jpg"
-                  class="h-[200px] object-contain"
-                  alt="safetyboot"
-                />
-                <div
-                  class="w-full min-h-14 bg-gradient-to-bl from-cyan-700 to-blue-700 text-white p-4"
-                >
-                  <p class="font-light tracking-wide">
-                    Puncture resistant work boots
-                  </p>
-                </div>
-              </div>
+          </div>
+          <div
+            class="flex flex-col text-white snap-start basis-80 shrink-0 h-max overflow-y-hidden rounded shadow-lg"
+          >
+            <div class="h-60">
+              <img
+                src="/assets/imgs/better imgs/embroidery/hoodies.jpg"
+                class="object-cover rounded-t-md"
+                alt=""
+                height=""
+              />
             </div>
-
-            <div class="w-full max-w-sm mx-auto">
-              <div
-                class="flex flex-col items-center justify-between text-center border-2 border-sky-700 rounded"
-              >
-                <img
-                  src="/assets/imgs/better imgs/Slip-on-Leather-Work-Boots-03-300x300.jpg"
-                  class="h-[200px] object-contain"
-                  alt="safetyboot"
-                />
-                <div
-                  class="w-full min-h-14 bg-gradient-to-bl from-cyan-700 to-blue-700 text-white p-4"
-                >
-                  <p class="font-light tracking-wide">
-                    Slip-on leather work boots
-                  </p>
-                </div>
-              </div>
+            <div
+              class="bg-gradient-to-bl from-cyan-700 to-blue-700 rounded-b-md pt-5 pr-4 pb-4 pl-4 h-[50%]"
+            >
+              <h2 class="text-xl font-semibold tracking-wide mb-3">Hoods</h2>
+              <p class="font-light">
+                Discover the artistry behind our custom hoodies. Each stitch
+                reflects our dedication to superior embroidery, making these
+                hoodies a canvas for your brand’s story.
+              </p>
+              <!-- <a href="#" class="inline-block">Learn more</a> -->
             </div>
-
-            <div class="w-full max-w-sm mx-auto">
-              <div
-                class="flex flex-col items-center justify-between text-center border-2 border-sky-700 rounded"
-              >
-                <img
-                  src="/assets/imgs/better imgs/Steel-Toe-Insulated-Work-Boots-13-300x300.jpg"
-                  class="h-[200px] object-contain"
-                  alt="safetyboot"
-                />
-                <div
-                  class="w-full min-h-14 bg-gradient-to-bl from-cyan-700 to-blue-700 text-white p-4"
-                >
-                  <p class="font-light tracking-wide">
-                    Steel toe insulated work boots
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="w-full max-w-sm mx-auto">
-              <div
-                class="flex flex-col items-center justify-between text-center border-2 border-sky-700 rounded"
-              >
-                <img
-                  src="/assets/imgs/better imgs/Lightweight-waterproof-work-boots.jpg"
-                  class="h-[200px] object-contain"
-                  alt="safetyboot"
-                />
-                <div
-                  class="w-full min-h-14 bg-gradient-to-bl from-cyan-700 to-blue-700 text-white p-4"
-                >
-                  <p class="font-light tracking-wide">
-                    Lightweight waterproof work boots
-                  </p>
-                </div>
-              </div>
-            </div> -->
           </div>
         </div>
       </section>

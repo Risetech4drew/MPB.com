@@ -23,6 +23,12 @@ module.exports = {
           "url('/assets/imgs/better imgs/commercial-printing/side-picture.jfif')",
         corporate:
           "url('/assets/imgs/better imgs/corporate-uniforms/corporate-uni-bg.jpg')",
+        embroidery:
+          "url('/assets/imgs/better imgs/embroidery/embroidery-bg-2.jpg')",
+        embroideryMachine:
+          "url('/assets/imgs/better imgs/embroidery/embroidery-bg.jfif')",
+        embroidedProducts:
+          "url('/assets/imgs/better imgs/embroidery/featured-bg.jpg')",
       },
       gridTemplateColumns: {
         "service-cards": "repeat(3,minmax(20em,1fr))",
