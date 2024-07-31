@@ -32,6 +32,9 @@ module.exports = {
         promotional: "url('/assets/imgs/better imgs/promo-pics.png')",
         promo:
           "url('/assets/imgs/better imgs/promo/Banner-PromotionalProducts.webp')",
+        screenPrinting:
+          "url('/assets/imgs/better imgs/screen-printing/sigma_compressed_0419.jpg')",
+        screenprintbg: "url('/assets/imgs/better imgs/1-Screen-Printing.jpg')",
       },
       gridTemplateColumns: {
         "service-cards": "repeat(3,minmax(20em,1fr))",

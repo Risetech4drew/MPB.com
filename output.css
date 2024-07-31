@@ -1002,6 +1002,10 @@ video {
   max-width: 24rem;
 }
 
+.max-w-\[240px\] {
+  max-width: 240px;
+}
+
 .flex-shrink {
   flex-shrink: 1;
 }
@@ -2156,6 +2160,14 @@ video {
   background-image: url('/assets/imgs/better imgs/safetyfootwearbg.jpg');
 }
 
+.bg-screenPrinting {
+  background-image: url('/assets/imgs/better imgs/screen-printing/sigma_compressed_0419.jpg');
+}
+
+.bg-screenprintbg {
+  background-image: url('/assets/imgs/better imgs/1-Screen-Printing.jpg');
+}
+
 .bg-tools {
   background-image: url('/assets/imgs/better imgs/Tools/tools-bg.jpg');
 }
@@ -2210,10 +2222,6 @@ video {
 
 .bg-cover {
   background-size: cover;
-}
-
-.bg-contain {
-  background-size: contain;
 }
 
 .bg-fixed {
@@ -3554,6 +3562,10 @@ ul.breadcrumb li + li::before {
 
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .md\:flex-row {
