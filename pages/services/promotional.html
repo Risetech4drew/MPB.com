@@ -1,10 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-full">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- styles -->
     <link rel="stylesheet" href="/output.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <!-- font awesome -->
     <link
       rel="stylesheet"
@@ -13,7 +20,14 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <!-- scripts -->
     <script
       defer
@@ -21,7 +35,9 @@
     ></script>
     <script defer src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script defer src="/main.js"></script>
-    <title>Tools</title>
+
+    <!-- /scripts -->
+    <title>Promotional material</title>
   </head>
   <body>
     <header
@@ -39,8 +55,8 @@
         /></a>
         <button
           id="hamburger-el"
-          class="lg:hidden z-50"
-          aria-label="Toggle Hamburger Menu"
+          class="lg:hidden z-50 p-0"
+          aria-label="Main Menu"
         >
           <svg width="100" height="50" viewBox="0 0 100 100">
             <path
@@ -198,220 +214,234 @@
     <span
       class="overlay fixed inset-0 bg-black opacity-0 invisible transition-opacity duration-300 ease-in-out z-30"
     ></span>
-    <main>
-      <section
-        class="relative bg-tools bg-scroll md:bg-fixed bg-cover bg-center bg-no-repeat flex flex-col justify-center items-center h-[100vh]"
+    <section
+      class="relative bg-promo bg-scroll md:bg-fixed bg-center md:bg-bottom bg-cover bg-no-repeat flex flex-col justify-center items-center h-[50vh]"
+    >
+      <div
+        class="w-[90%] lg:container text-yellow-500 text-center z-10"
+        data-aos="fade-down"
       >
-        <div
-          class="absolute w-[90%] lg:container mx-auto text-white flex flex-col justify-center items-center z-20"
+        <h1
+          class="text-2xl md:text-5xl font-semibold tracking-wide mb-4 capitalize"
         >
-          <h1
-            class="capitalize text-3xl md:text-5xl font-semibold tracking-wider mb-8 text-yellow-500"
-            data-aos="fade-down"
-          >
-            Tools
-          </h1>
-
-          <p
-            class="max-w-prose md:text-2xl tracking-wide text-center font-light mb-4"
-            data-aos="fade-up"
-          >
-            We offer a comprehensive range of tools for various applications,
-            from precision screwdrivers to heavy-duty power tools, we've got the
-            gear to tackle any job, big or small.
+          promotional material
+        </h1>
+        <ul>
+          <ul class="breadcrumb">
+            <li>
+              <a
+                href="/index.html"
+                class="hover:text-sky-700 transition-all duration-150 ease-in-out"
+                >home</a
+              >
+            </li>
+            <li>
+              <a
+                href="/index.html"
+                class="hover:text-sky-700 transition-all duration-150 ease-in-out"
+                >services</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-sky-700 transition-all duration-150 ease-in-out"
+                >promotional material</a
+              >
+            </li>
+          </ul>
+        </ul>
+      </div>
+      <div class="absolute inset-0 bg-black opacity-50 z-0"></div>
+    </section>
+    <span
+      class="overlay fixed inset-0 bg-black opacity-50 invisible transition-opacity duration-300 ease-in-out z-30"
+    ></span>
+    <main class="py-10">
+      <section
+        class="w-[90%] md:container mx-auto flex flex-col md:flex-row gap-4"
+      >
+        <div class="flex flex-col justify-center">
+          <p class="text-xl md:text-2xl max-w-prose text-justify tracking-wide">
+            Elevate your brand with our custom-designed promotional materials.
+            From classic items to innovative products, we bring your vision to
+            life with precision and creativity.
           </p>
-          <a
-            href="#"
-            class="inline-block p-4 bg-yellow-500 rounded-md font-semibold tracking-wide text-sky-800"
-            data-aos="fade-up"
-            >Contact Us</a
-          >
         </div>
-        <div class="absolute inset-0 bg-black opacity-50 z-10"></div>
+        <div
+          class="bg-promotional bg-cover bg-center bg-no-repeat rounded-md w-full h-72 shadow-md"
+        ></div>
       </section>
       <section class="py-28">
-        <div class="lg:container mx-auto w-[90%] mt-8">
+        <h2
+          class="text-4xl text-sky-700 tracking-wide font-semibold text-center mb-8"
+        >
+          Categories
+        </h2>
+        <div
+          class="w-[85%] mx-auto flex flex-wrap md:grid grid-cols-service-cards gap-5"
+          data-aos="fade-up"
+        >
           <div
-            class="mx-auto grid grid-cols-2 md:grid-cols-3 grid-rows-2 h-full md:w-[85%] gap-4"
+            class="text-white snap-start basis-80 shrink-0 shadow-lg flex flex-col"
           >
-            <div class="w-full max-w-sm mx-auto">
-              <div
-                class="flex flex-col items-center justify-between text-center border-2 border-sky-700 rounded"
-              >
-                <img
-                  src="/assets/imgs/better imgs/Tools/pinnacle-allen-keys-300x300.webp"
-                  class="h-[200px] object-contain"
-                  alt="safetyboot"
-                />
-                <div
-                  class="w-full min-h- bg-gradient-to-bl from-cyan-700 to-blue-700 p-4 text-white"
-                >
-                  <p class="font-light tracking-wider capitalize">allen-keys</p>
-                </div>
-              </div>
+            <div class="">
+              <!-- h-44 sm:h-48 md:h-52 -->
+              <img
+                src="/assets/imgs/better imgs/promo/Pen.webp"
+                alt="branded pen"
+                class="object-cover rounded-t-md"
+              />
             </div>
-
-            <div class="w-full max-w-sm mx-auto">
-              <div
-                class="flex flex-col items-center justify-between rounded text-center border-2 border-sky-700"
-              >
-                <img
-                  src="/assets/imgs/better imgs/Tools/pinnacle-bench-vice-300x300.webp"
-                  class="h-[200px] object-contain"
-                  alt="safetyboot"
-                />
-                <div
-                  class="w-full min-h-14 bg-gradient-to-bl from-cyan-700 to-blue-700 text-white p-4"
-                >
-                  <p class="font-light tracking-wide capitalize">bench vices</p>
-                </div>
-              </div>
+            <div
+              class="bg-gradient-to-bl from-cyan-700 to-blue-700 rounded-b-md pt-5 pr-4 pb-4 pl-4 h-full"
+            >
+              <h2 class="text-xl font-semibold tracking-wider mb-3 capitalize">
+                branded pens
+              </h2>
+              <p class="font-light tracking-wide text-justify">
+                Custom pens are a cost-effective and useful promotional item for
+                companies, providing a tangible way to keep your brand at the
+                forefront of customers' minds while also being a practical tool
+                for everyday use.
+              </p>
+              <!-- <a href="#" class="inline-block">Learn more</a> -->
             </div>
+          </div>
 
-            <div class="w-full max-w-sm mx-auto">
-              <div
-                class="flex flex-col items-center justify-between text-center border-2 border-sky-700 rounded"
-              >
-                <img
-                  src="/assets/imgs/better imgs/Tools/pinnacle-bolt-cutter.webp"
-                  class="h-[200px] object-contain"
-                  alt="safetyboot"
-                />
-                <div
-                  class="w-full min-h-14 bg-gradient-to-bl from-cyan-700 to-blue-700 p-4 text-white"
-                >
-                  <p class="font-light capitalize">bolt cutters</p>
-                </div>
-              </div>
+          <div
+            class="text-white snap-start basis-80 shrink-0 shadow-lg flex flex-col"
+          >
+            <div class="">
+              <img
+                src="/assets/imgs/better imgs/promo/bottles-2023-5-29-11-09-56.webp"
+                alt=""
+                class="object-contain rounded-t-md"
+                height=""
+              />
             </div>
-
-            <div class="w-full max-w-sm mx-auto">
-              <div
-                class="flex flex-col items-center justify-between text-center border-2 border-sky-700 rounded"
-              >
-                <img
-                  src="/assets/imgs/better imgs/Tools/pinnacle-claw-hammer-300x300.webp"
-                  class="h-[200px] object-contain"
-                  alt="safetyboot"
-                />
-                <div
-                  class="w-full min-h-14 bg-gradient-to-bl from-cyan-700 to-blue-700 text-white p-4"
-                >
-                  <p class="font-light tracking-wide capitalize">
-                    pinnacle claw hammers
-                  </p>
-                </div>
-              </div>
+            <div
+              class="bg-gradient-to-bl from-cyan-700 to-blue-700 rounded-b-md pt-5 pr-4 pb-4 pl-4 h-full"
+            >
+              <h2 class="text-xl font-semibold tracking-wider mb-3 capitalize">
+                branded bottles
+              </h2>
+              <p class="font-light tracking-wide text-justify">
+                Our custom printed bottles are a classic corporate promotional
+                product, with a range of sizes and designs available to suit any
+                occasion. Promotional bottles are perfect for corporate events,
+                conferences, and trade shows as they offer a practical and
+                eco-friendly alternative to single-use water bottles.
+              </p>
+              <!-- <a href="#" class="inline-block">Learn more</a> -->
             </div>
-
-            <div class="w-full max-w-sm mx-auto">
-              <div
-                class="flex flex-col items-center justify-between text-center border-2 border-sky-700 rounded"
-              >
-                <img
-                  src="/assets/imgs/better imgs/Tools/pinnacle-combination-plier-300x300.webp"
-                  class="h-[200px] object-contain"
-                  alt="safetyboot"
-                />
-                <div
-                  class="w-full min-h-14 bg-gradient-to-bl from-cyan-700 to-blue-700 text-white p-4"
-                >
-                  <p class="font-light tracking-wide capitalize">
-                    combination pliers
-                  </p>
-                </div>
-              </div>
+          </div>
+          <div
+            class="flex flex-col text-white snap-start basis-80 shrink-0 shadow-lg"
+          >
+            <div class="">
+              <!-- h-44 sm:h-48 md:h-52 -->
+              <img
+                src="/assets/imgs/better imgs/promo/branded-diary.jpg"
+                alt="blue branded diary"
+                class="object-cover rounded-t-md"
+                height=""
+              />
             </div>
-
-            <div class="w-full max-w-sm mx-auto">
-              <div
-                class="flex flex-col items-center justify-between text-center border-2 border-sky-700 rounded"
-              >
-                <img
-                  src="/assets/imgs/better imgs/Tools/pinnacle-hacksaw-300x300.webp"
-                  class="h-[200px] object-contain"
-                  alt="image hacksaw"
-                />
-                <div
-                  class="w-full min-h-14 bg-gradient-to-bl from-cyan-700 to-blue-700 text-white p-4"
-                >
-                  <p class="font-light tracking-wide capitalize">hacksaw</p>
-                </div>
-              </div>
+            <div
+              class="bg-gradient-to-bl from-cyan-700 to-blue-700 rounded-b-md pt-5 pr-4 pb-4 pl-4 h-full"
+            >
+              <h2 class="text-xl font-semibold tracking-wider mb-3 capitalize">
+                branded diaries
+              </h2>
+              <p class="font-light tracking-wide text-justify">
+                Transform everyday planners into powerful brand ambassadors. Our
+                custom diary branding service combines functionality with style,
+                creating memorable keepsakes that keep your brand at your
+                clients' fingertips all year round.
+              </p>
+              <!-- <a href="#" class="inline-block">Learn more</a> -->
             </div>
-
-            <div class="w-full max-w-sm mx-auto">
-              <div
-                class="flex flex-col items-center justify-between text-center border-2 border-sky-700 rounded"
-              >
-                <img
-                  src="/assets/imgs/better imgs/Tools/pinnacle-hacksaw-blade-300x300.webp"
-                  class="h-[200px] object-contain"
-                  alt="image hacksaw-blade"
-                />
-                <div
-                  class="w-full min-h-14 bg-gradient-to-bl from-cyan-700 to-blue-700 text-white p-4"
-                >
-                  <p class="font-light tracking-wide capitalize">
-                    hacksaw blade
-                  </p>
-                </div>
-              </div>
+          </div>
+          <div
+            class="flex flex-col text-white snap-start basis-80 shrink-0 shadow-lg"
+          >
+            <div class="">
+              <img
+                src="/assets/imgs/better imgs/promo/Mugs.webp"
+                class="object-contain rounded-t-md"
+                height=""
+                alt="custom branded mugs"
+              />
             </div>
-
-            <div class="w-full max-w-sm mx-auto">
-              <div
-                class="flex flex-col items-center justify-between text-center border-2 border-sky-700 rounded"
-              >
-                <img
-                  src="/assets/imgs/better imgs/Tools/pinnacle-hss-steel-drill-bits-300x300.webp"
-                  class="h-[200px] object-contain"
-                  alt="image steel-drill-bits"
-                />
-                <div
-                  class="w-full min-h-14 bg-gradient-to-bl from-cyan-700 to-blue-700 text-white p-4"
-                >
-                  <p class="font-light tracking-wide capitalize">
-                    steel drill bits
-                  </p>
-                </div>
-              </div>
+            <div
+              class="bg-gradient-to-bl from-cyan-700 to-blue-700 rounded-b-md pt-5 pr-4 pb-4 pl-4 h-full"
+            >
+              <h2 class="text-xl font-semibold tracking-wider mb-3 capitalize">
+                custom branded mugs
+              </h2>
+              <p class="font-light tracking-wide text-justify">
+                Our custom printed mugs are a popular and practical promotional
+                item that is perfect for corporate gifting or as a giveaway at
+                trade shows and events. Whether for use at home or in the
+                office, custom mugs provide a daily reminder of the company and
+                its message. This everyday item is a great addition to your
+                corporate promotional materials.
+              </p>
+              <!-- <a href="#" class="inline-block">Learn more</a> -->
             </div>
-
-            <div class="w-full max-w-sm mx-auto">
-              <div
-                class="flex flex-col items-center justify-between text-center border-2 border-sky-700 rounded"
-              >
-                <img
-                  src="/assets/imgs/better imgs/Tools/pinnacle-phillips-screwdriver-300x300.webp"
-                  class="h-[200px] object-contain"
-                  alt="image screwdriver"
-                />
-                <div
-                  class="w-full min-h-14 bg-gradient-to-bl from-cyan-700 to-blue-700 text-white p-4"
-                >
-                  <p class="font-light tracking-wide capitalize">
-                    screwdrivers
-                  </p>
-                </div>
-              </div>
+          </div>
+          <div
+            class="flex flex-col text-white snap-start basis-80 shrink-0 rounded shadow-lg"
+          >
+            <div class="">
+              <img
+                src="/assets/imgs/better imgs/promo/promotional-t-shirt-2.jpg"
+                class="object-cover rounded-t-md"
+                alt=""
+                height=""
+              />
             </div>
-
-            <div class="w-full max-w-sm mx-auto">
-              <div
-                class="flex flex-col items-center justify-between text-center border-2 border-sky-700 rounded"
-              >
-                <img
-                  src="/assets/imgs/better imgs/Tools/pinnacle-tool-box-86pcs-outside-300x300.webp"
-                  class="h-[200px] object-contain"
-                  alt="image black tool box"
-                />
-                <div
-                  class="w-full min-h-14 bg-gradient-to-bl from-cyan-700 to-blue-700 text-white p-4"
-                >
-                  <p class="font-light tracking-wide capitalize">tool box</p>
-                </div>
-              </div>
+            <div
+              class="bg-gradient-to-bl from-cyan-700 to-blue-700 rounded-b-md pt-5 pr-4 pb-4 pl-4 h-full"
+            >
+              <h2 class="text-xl font-semibold tracking-wider mb-3 capitalize">
+                custom branded t-shirts
+              </h2>
+              <p class="font-light tracking-wide text-justify">
+                Custom printed shirts are perfect for promoting your brand or
+                message, with a range of sizes and colours available to suit any
+                occasion. Made from high-quality materials, our promotional
+                shirts are perfect to help get your brand noticed at corporate
+                events, conferences, and trade shows.
+              </p>
+              <!-- <a href="#" class="inline-block">Learn more</a> -->
+            </div>
+          </div>
+          <div
+            class="flex flex-col text-white snap-start basis-80 shrink-0 rounded shadow-lg"
+          >
+            <div class="h-[18.5rem]">
+              <img
+                src="/assets/imgs/better imgs/promo/parasol.jpg"
+                class="object-cover rounded-t-md"
+                alt=""
+                height=""
+              />
+            </div>
+            <div
+              class="bg-gradient-to-bl from-cyan-700 to-blue-700 rounded-b-md pt-5 pr-4 pb-4 pl-4 h-full"
+            >
+              <h2 class="text-xl font-semibold tracking-wider mb-3 capitalize">
+                parasols
+              </h2>
+              <p class="font-light text-justify">
+                Make a big impression with our custom branded parasols. Perfect
+                for outdoor events, hospitality, and promotional campaigns, our
+                eye-catching parasols offer expansive branding real estate
+                that's impossible to miss.
+              </p>
+              <!-- <a href="#" class="inline-block">Learn more</a> -->
             </div>
           </div>
         </div>

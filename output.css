@@ -778,10 +778,6 @@ video {
   margin-bottom: 1.25rem;
 }
 
-.mb-6 {
-  margin-bottom: 1.5rem;
-}
-
 .mb-8 {
   margin-bottom: 2rem;
 }
@@ -913,10 +909,6 @@ video {
   display: none;
 }
 
-.h-100 {
-  height: 30rem;
-}
-
 .h-16 {
   height: 4rem;
 }
@@ -931,6 +923,10 @@ video {
 
 .h-64 {
   height: 16rem;
+}
+
+.h-72 {
+  height: 18rem;
 }
 
 .h-\[100vh\] {
@@ -960,10 +956,6 @@ video {
 .h-max {
   height: -moz-max-content;
   height: max-content;
-}
-
-.h-72 {
-  height: 18rem;
 }
 
 .min-h-14 {
@@ -2117,7 +2109,7 @@ video {
 }
 
 .bg-embroidery {
-  background-image: url('/assets/imgs/better imgs/embroidery/embroidery-bg-2.jpg');
+  background-image: url('/assets/imgs/better imgs/embroidery/from_boos/IMG-20240730-WA0055.jpg');
 }
 
 .bg-footwear {
@@ -2142,6 +2134,14 @@ video {
 
 .bg-printingImage {
   background-image: url('/assets/imgs/better imgs/commercial-printing/side-picture.jfif');
+}
+
+.bg-promo {
+  background-image: url('/assets/imgs/better imgs/promo/Banner-PromotionalProducts.webp');
+}
+
+.bg-promotional {
+  background-image: url('/assets/imgs/better imgs/promo-pics.png');
 }
 
 .bg-reflectivewear {
@@ -2210,6 +2210,10 @@ video {
 
 .bg-cover {
   background-size: cover;
+}
+
+.bg-contain {
+  background-size: contain;
 }
 
 .bg-fixed {
@@ -2371,11 +2375,6 @@ video {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
-
-.py-6 {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
 }
 
 .pb-28 {
@@ -3533,10 +3532,6 @@ ul.breadcrumb li + li::before {
     height: 20rem;
   }
 
-  .md\:h-auto {
-    height: auto;
-  }
-
   .md\:w-\[75\%\] {
     width: 75%;
   }
@@ -3551,10 +3546,6 @@ ul.breadcrumb li + li::before {
 
   .md\:max-w-lg {
     max-width: 32rem;
-  }
-
-  .md\:max-w-xl {
-    max-width: 36rem;
   }
 
   .md\:grid-cols-2 {

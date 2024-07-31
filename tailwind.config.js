@@ -24,11 +24,14 @@ module.exports = {
         corporate:
           "url('/assets/imgs/better imgs/corporate-uniforms/corporate-uni-bg.jpg')",
         embroidery:
-          "url('/assets/imgs/better imgs/embroidery/embroidery-bg-2.jpg')",
+          "url('/assets/imgs/better imgs/embroidery/from_boos/IMG-20240730-WA0055.jpg')",
         embroideryMachine:
           "url('/assets/imgs/better imgs/embroidery/embroidery-bg.jfif')",
         embroidedProducts:
           "url('/assets/imgs/better imgs/embroidery/featured-bg.jpg')",
+        promotional: "url('/assets/imgs/better imgs/promo-pics.png')",
+        promo:
+          "url('/assets/imgs/better imgs/promo/Banner-PromotionalProducts.webp')",
       },
       gridTemplateColumns: {
         "service-cards": "repeat(3,minmax(20em,1fr))",
