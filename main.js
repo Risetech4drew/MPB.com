@@ -1,18 +1,25 @@
 (function () {
   // Store the initial body padding to prevent layout shift
-  let scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
-  let initialBodyPadding =
-    parseInt(
-      window
-        .getComputedStyle(document.querySelector("body"))
-        .getPropertyValue("padding-right")
-    ) || 0;
+  const getInitialBodyPadding = () => {
+    let initialBodyPadding =
+      parseInt(
+        window
+          .getComputedStyle(document.querySelector("body"))
+          .getPropertyValue("padding-right")
+      ) || 0;
+    return initialBodyPadding;
+  };
+  const getScrollbarWidth = () => {
+    let scrollbarWidth =
+      window.innerWidth - document.documentElement.clientWidth;
+    return scrollbarWidth;
+  };
   // Function to disable scroll
   const disableMainScroll = () => {
     if (document.body.style.overflow !== "hidden") {
       document.body.style.overflow = "hidden";
       document.body.style.paddingRight = `${
-        initialBodyPadding + scrollbarWidth
+        getInitialBodyPadding() + getScrollbarWidth()
       }px`;
     }
   };
@@ -24,7 +31,7 @@
 
   document.body.addEventListener(
     "touchmove",
-    function (e) {
+    (e) => {
       if (navbar.classList.contains("active") && !navbar.contains(e.target)) {
         e.preventDefault();
       }
