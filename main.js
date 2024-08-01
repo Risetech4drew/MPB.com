@@ -245,6 +245,20 @@
       },
     },
   });
+  //
+  new Swiper(".screenPrintItems", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 4,
+      },
+    },
+  });
 
   // animation on scroll
   window.addEventListener("load", () => {
