@@ -45,7 +45,7 @@
       id="header"
     >
       <div
-        class="flex justify-between items-center h-16 z-50 lg:container mx-auto"
+        class="flex justify-between items-center h-16 z-50 container mx-auto"
       >
         <a href="/index.html" class="inline-block pl-4 z-50 w-[500px]"
           ><img
@@ -73,7 +73,7 @@
 
         <nav class="navbar shadow-lg lg:shadow-none bg-white z-40">
           <ul
-            class="menu flex flex-col gap-2 lg:flex-row lg:items-center lg:justify-around lg:p-0 font-semibold bg-white lg:bg-transparent text-neutral-900 z-0"
+            class="menu flex flex-col gap-2 lg:flex-row lg:items-center border-2 lg:justify-around lg:p-0 font-semibold bg-white md:bg-transparent text-neutral-900 z-0"
           >
             <li class="py-2">
               <a class="link" href="/index.html">Home</a>
@@ -258,21 +258,27 @@
       class="overlay fixed inset-0 bg-black opacity-50 invisible transition-opacity duration-300 ease-in-out z-30"
     ></span>
     <main class="py-10">
-      <section
-        class="w-[90%] md:container mx-auto flex flex-col md:flex-row gap-4"
-      >
-        <div class="flex flex-col justify-center" data-aos="fade-right">
-          <p class="text-lg md:text-2xl text-justify max-w-prose">
-            we specialize in state-of-the-art screen printing and comprehensive
-            branding solutions. Our expert team combines artistic finesse with
-            cutting-edge technology to deliver exceptional results that make
-            your brand stand out in today's competitive marketplace.
-          </p>
-        </div>
+      <section>
         <div
-          class="bg-screenprintbg bg-cover bg-center bg-no-repeat rounded-md w-full h-72 shadow-md"
-          data-aos="fade-left"
-        ></div>
+          class="w-[90%] container mx-auto flex flex-col md:flex-row items-center gap-4"
+        >
+          <div class="md:w-1/2" data-aos="fade-right">
+            <p class="text-lg md:text-2xl text-justify max-w-prose">
+              we specialize in state-of-the-art screen printing and
+              comprehensive branding solutions. Our expert team combines
+              artistic finesse with cutting-edge technology to deliver
+              exceptional results that make your brand stand out in today's
+              competitive marketplace.
+            </p>
+          </div>
+          <div class="md:w-1/2">
+            <img
+              src="/assets/imgs/better imgs/1-Screen-Printing.jpg"
+              alt="am man screen printing manually"
+              class="w-full h-auto rounded-lg"
+            />
+          </div>
+        </div>
       </section>
       <section class="py-28">
         <div class="w-[90%] md:container mx-auto text-center">
@@ -287,7 +293,7 @@
             Our advanced techniques ensure:
           </p>
           <ul
-            class="py-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4"
+            class="md:w-[75%] mx-auto py-10 grid grid-cols-1 md:grid-cols-3 gap-4"
           >
             <li
               class="flex flex-col h-full bg-gradient-to-bl from-cyan-700 to-blue-700 text-white p-4 rounded-md shadow-md"
@@ -436,7 +442,7 @@
             strategic branding can make for your business or organization.
           </p>
           <a
-            href="#"
+            href="/pages/contact.html"
             class="inline-block p-4 rounded-md font-semibold tracking-wide capitalize bg-yellow-500 mt-4"
             >contact us</a
           >

@@ -35,9 +35,10 @@ module.exports = {
         screenPrinting:
           "url('/assets/imgs/better imgs/screen-printing/sigma_compressed_0419.jpg')",
         screenprintbg: "url('/assets/imgs/better imgs/1-Screen-Printing.jpg')",
+        contact: "url('/assets/imgs/better imgs/contact-us/contact-us.jpg')",
       },
       gridTemplateColumns: {
-        "service-cards": "repeat(3,minmax(20em,1fr))",
+        "service-cards": "repeat(3,minmax(10em,1fr))",
       },
       // height: {
       //   100: "30rem",
