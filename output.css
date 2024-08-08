@@ -966,10 +966,6 @@ video {
   min-height: 3.5rem;
 }
 
-.w-1\/2 {
-  width: 50%;
-}
-
 .w-80 {
   width: 20rem;
 }
@@ -2140,6 +2136,10 @@ video {
   background-image: url('/assets/imgs/better imgs/Handprotection-hero-bg.webp');
 }
 
+.bg-headprotection {
+  background-image: url('/assets/imgs/better imgs/headprotection/head-protection-bg.jpg');
+}
+
 .bg-hero {
   background-image: url('/assets/imgs/PPE.jpg');
 }
@@ -2174,10 +2174,6 @@ video {
 
 .bg-workwear {
   background-image: url('/assets/imgs/better imgs/workwear-bg.webp');
-}
-
-.bg-headprotection {
-  background-image: url('/assets/imgs/better imgs/headprotection/head-protection-bg.jpg');
 }
 
 .from-black\/10 {
