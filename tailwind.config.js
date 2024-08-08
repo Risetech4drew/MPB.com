@@ -10,6 +10,8 @@ module.exports = {
         safetyfootwear: "url('/assets/imgs/better imgs/safetyfootwearbg.jpg')",
         handprotection:
           "url('/assets/imgs/better imgs/Handprotection-hero-bg.webp')",
+        headprotection:
+          "url('/assets/imgs/better imgs/headprotection/head-protection-bg.jpg')",
         reflectivewear:
           "url('/assets/imgs/better imgs/hero-bg-reflective-wear.jpg')",
         workwear: "url('/assets/imgs/better imgs/workwear-bg.webp')",
@@ -19,22 +21,17 @@ module.exports = {
           "url('/assets/imgs/better imgs/roadsafety/rpadsafety-bg.jfif')",
         commercial:
           "url('/assets/imgs/better imgs/commercial-printing/commercial-printing-bg.jpg')",
-        printingImage:
-          "url('/assets/imgs/better imgs/commercial-printing/side-picture.jfif')",
-        corporate:
-          "url('/assets/imgs/better imgs/corporate-uniforms/corporate-uni-bg.jpg')",
+
         embroidery:
           "url('/assets/imgs/better imgs/embroidery/from_boos/IMG-20240730-WA0055.jpg')",
         embroideryMachine:
           "url('/assets/imgs/better imgs/embroidery/embroidery-bg.jfif')",
-        embroidedProducts:
-          "url('/assets/imgs/better imgs/embroidery/featured-bg.jpg')",
-        promotional: "url('/assets/imgs/better imgs/promo-pics.png')",
+
         promo:
           "url('/assets/imgs/better imgs/promo/Banner-PromotionalProducts.webp')",
         screenPrinting:
           "url('/assets/imgs/better imgs/screen-printing/sigma_compressed_0419.jpg')",
-        screenprintbg: "url('/assets/imgs/better imgs/1-Screen-Printing.jpg')",
+
         contact: "url('/assets/imgs/better imgs/contact-us/contact-us.jpg')",
       },
       gridTemplateColumns: {

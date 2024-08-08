@@ -929,10 +929,6 @@ video {
   height: 16rem;
 }
 
-.h-72 {
-  height: 18rem;
-}
-
 .h-\[100vh\] {
   height: 100vh;
 }
@@ -968,6 +964,10 @@ video {
 
 .min-h-14 {
   min-height: 3.5rem;
+}
+
+.w-1\/2 {
+  width: 50%;
 }
 
 .w-80 {
@@ -1008,10 +1008,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-1\/2 {
-  width: 50%;
 }
 
 .max-w-prose {
@@ -2091,11 +2087,6 @@ video {
   border-color: rgb(234 179 8 / var(--tw-border-opacity));
 }
 
-.border-red-700 {
-  --tw-border-opacity: 1;
-  border-color: rgb(185 28 28 / var(--tw-border-opacity));
-}
-
 .bg-\[rgb\(255\2c 0\2c 0\)\] {
   --tw-bg-opacity: 1;
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
@@ -2129,14 +2120,6 @@ video {
   background-image: url('/assets/imgs/better imgs/contact-us/contact-us.jpg');
 }
 
-.bg-corporate {
-  background-image: url('/assets/imgs/better imgs/corporate-uniforms/corporate-uni-bg.jpg');
-}
-
-.bg-embroidedProducts {
-  background-image: url('/assets/imgs/better imgs/embroidery/featured-bg.jpg');
-}
-
 .bg-embroidery {
   background-image: url('/assets/imgs/better imgs/embroidery/from_boos/IMG-20240730-WA0055.jpg');
 }
@@ -2161,16 +2144,8 @@ video {
   background-image: url('/assets/imgs/PPE.jpg');
 }
 
-.bg-printingImage {
-  background-image: url('/assets/imgs/better imgs/commercial-printing/side-picture.jfif');
-}
-
 .bg-promo {
   background-image: url('/assets/imgs/better imgs/promo/Banner-PromotionalProducts.webp');
-}
-
-.bg-promotional {
-  background-image: url('/assets/imgs/better imgs/promo-pics.png');
 }
 
 .bg-reflectivewear {
@@ -2189,10 +2164,6 @@ video {
   background-image: url('/assets/imgs/better imgs/screen-printing/sigma_compressed_0419.jpg');
 }
 
-.bg-screenprintbg {
-  background-image: url('/assets/imgs/better imgs/1-Screen-Printing.jpg');
-}
-
 .bg-tools {
   background-image: url('/assets/imgs/better imgs/Tools/tools-bg.jpg');
 }
@@ -2203,6 +2174,10 @@ video {
 
 .bg-workwear {
   background-image: url('/assets/imgs/better imgs/workwear-bg.webp');
+}
+
+.bg-headprotection {
+  background-image: url('/assets/imgs/better imgs/headprotection/head-protection-bg.jpg');
 }
 
 .from-black\/10 {
@@ -2395,6 +2370,11 @@ video {
   padding-bottom: 2.5rem;
 }
 
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -2408,11 +2388,6 @@ video {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
-
-.py-16 {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
 }
 
 .pb-28 {
@@ -2433,6 +2408,10 @@ video {
 
 .pt-14 {
   padding-top: 3.5rem;
+}
+
+.pt-20 {
+  padding-top: 5rem;
 }
 
 .pt-5 {
@@ -3522,10 +3501,6 @@ ul.breadcrumb li + li::before {
     height: 12rem;
   }
 
-  .sm\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
   .sm\:underline {
     text-decoration-line: underline;
   }
@@ -3572,10 +3547,6 @@ ul.breadcrumb li + li::before {
     width: 85%;
   }
 
-  .md\:max-w-lg {
-    max-width: 32rem;
-  }
-
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -3594,26 +3565,6 @@ ul.breadcrumb li + li::before {
 
   .md\:justify-center {
     justify-content: center;
-  }
-
-  .md\:justify-between {
-    justify-content: space-between;
-  }
-
-  .md\:justify-around {
-    justify-content: space-around;
-  }
-
-  .md\:justify-evenly {
-    justify-content: space-evenly;
-  }
-
-  .md\:gap-9 {
-    gap: 2.25rem;
-  }
-
-  .md\:gap-32 {
-    gap: 8rem;
   }
 
   .md\:space-x-2 > :not([hidden]) ~ :not([hidden]) {
@@ -3681,10 +3632,6 @@ ul.breadcrumb li + li::before {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-  .lg\:grid-cols-4 {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-
   .lg\:flex-row {
     flex-direction: row;
   }
@@ -3695,10 +3642,6 @@ ul.breadcrumb li + li::before {
 
   .lg\:justify-normal {
     justify-content: normal;
-  }
-
-  .lg\:justify-between {
-    justify-content: space-between;
   }
 
   .lg\:justify-around {
