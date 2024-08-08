@@ -205,38 +205,75 @@
     <span
       class="overlay fixed inset-0 bg-black opacity-0 invisible transition-opacity duration-300 ease-in-out z-30"
     ></span>
-    <main>
+    <main class="pt-20">
       <section
-        class="relative bg-tools bg-scroll md:bg-fixed bg-cover bg-center bg-no-repeat flex flex-col justify-center items-center h-[100vh]"
+        class="relative bg-tools bg-scroll md:bg-fixed bg-cover bg-center bg-no-repeat flex justify-center items-center h-[50vh]"
       >
         <div
-          class="absolute w-[90%] lg:container mx-auto text-white flex flex-col justify-center items-center z-20"
+          class="w-[90%] container mx-auto flex flex-col justify-center items-center z-10 text-yellow-500"
         >
           <h1
-            class="capitalize text-3xl md:text-5xl font-semibold tracking-wider mb-8 text-yellow-500"
+            class="capitalize text-2xl font-semibold tracking-wide mb-4"
             data-aos="fade-down"
           >
-            Tools
+            welding & accessories
           </h1>
-
-          <p
-            class="max-w-prose md:text-2xl tracking-wide text-center font-light mb-4"
-            data-aos="fade-up"
-          >
-            We offer a comprehensive range of tools for various applications,
-            from precision screwdrivers to heavy-duty power tools, we've got the
-            gear to tackle any job, big or small.
-          </p>
-          <a
-            href="#"
-            class="inline-block p-4 bg-yellow-500 rounded-md font-semibold tracking-wide text-sky-800"
-            data-aos="fade-up"
-            >Contact Us</a
-          >
+          <ul class="breadcrumb" data-aos="fade-up">
+            <li>
+              <a
+                href="/index.html"
+                class="hover:text-sky-700 transition-all duration-150 ease-in-out"
+                >home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="hover:text-sky-700 transition-all duration-150 ease-in-out"
+                >catalogue</a
+              >
+            </li>
+            <li>
+              <a
+                href="/pages/catalogue/tools.html"
+                class="hover:text-sky-700 transition-all duration-150 ease-in-out"
+                >tools</a
+              >
+            </li>
+          </ul>
         </div>
-        <div class="absolute inset-0 bg-black opacity-50 z-10"></div>
+        <div class="absolute inset-0 bg-black opacity-50 z-0"></div>
+      </section>
+      <section class="py-10">
+        <div
+          class="w-[90%] md:w-[80%] container mx-auto flex flex-col md:flex-row justify-center items-center gap-4"
+        >
+          <div class="md:w-1/2">
+            <p
+              class="text-lg md:text-3xl font-light text-justify"
+              data-aos="fade-right"
+            >
+              We offer a comprehensive range of tools for various applications,
+              from precision screwdrivers to heavy-duty power tools, we've got
+              the gear to tackle any job, big or small.
+            </p>
+          </div>
+          <div class="md:w-1/2">
+            <img
+              src="/assets/imgs/better imgs/Tools/tools-bg.jpg"
+              alt=""
+              class="rounded-lg h-auto"
+              data-aos="zoom-in"
+            />
+          </div>
+        </div>
       </section>
       <section class="py-28">
+        <h2
+          class="capitalize text-2xl md:text-4xl text-sky-700 tracking-wide text-center font-semibold"
+        >
+          tool products
+        </h2>
         <div class="lg:container mx-auto w-[90%] mt-8">
           <div
             class="mx-auto grid grid-cols-2 md:grid-cols-3 grid-rows-2 h-full md:w-[85%] gap-4"
