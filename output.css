@@ -2083,6 +2083,11 @@ video {
   border-color: rgb(234 179 8 / var(--tw-border-opacity));
 }
 
+.border-red-600 {
+  --tw-border-opacity: 1;
+  border-color: rgb(220 38 38 / var(--tw-border-opacity));
+}
+
 .bg-\[rgb\(255\2c 0\2c 0\)\] {
   --tw-bg-opacity: 1;
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
@@ -2153,7 +2158,7 @@ video {
 }
 
 .bg-roadsafety {
-  background-image: url('/assets/imgs/better imgs/roadsafety/rpadsafety-bg.jfif');
+  background-image: url('/assets/imgs/better imgs/roadsafety/roadsafety-items.jpg');
 }
 
 .bg-safetyfootwear {
@@ -2174,6 +2179,10 @@ video {
 
 .bg-workwear {
   background-image: url('/assets/imgs/better imgs/workwear-bg.webp');
+}
+
+.bg-corporate {
+  background-image: url('/assets/imgs/better imgs/corporate-uniforms/corporate-uni-bg.jpg');
 }
 
 .from-black\/10 {
@@ -3519,6 +3528,10 @@ ul.breadcrumb li + li::before {
     height: 13rem;
   }
 
+  .md\:h-72 {
+    height: 18rem;
+  }
+
   .md\:h-80 {
     height: 20rem;
   }
@@ -3624,12 +3637,12 @@ ul.breadcrumb li + li::before {
     display: none;
   }
 
-  .lg\:w-\[80\%\] {
-    width: 80%;
-  }
-
   .lg\:w-1\/2 {
     width: 50%;
+  }
+
+  .lg\:w-\[80\%\] {
+    width: 80%;
   }
 
   .lg\:grid-cols-3 {

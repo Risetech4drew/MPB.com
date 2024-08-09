@@ -18,10 +18,11 @@ module.exports = {
         welding: "url('/assets/imgs/better imgs/welding/welding-bg.jfif')",
         tools: "url('/assets/imgs/better imgs/Tools/tools-bg.jpg')",
         roadsafety:
-          "url('/assets/imgs/better imgs/roadsafety/rpadsafety-bg.jfif')",
+          "url('/assets/imgs/better imgs/roadsafety/roadsafety-items.jpg')",
         commercial:
           "url('/assets/imgs/better imgs/commercial-printing/commercial-printing-bg.jpg')",
-
+        corporate:
+          "url('/assets/imgs/better imgs/corporate-uniforms/corporate-uni-bg.jpg')",
         embroidery:
           "url('/assets/imgs/better imgs/embroidery/from_boos/IMG-20240730-WA0055.jpg')",
         embroideryMachine:
@@ -37,9 +38,6 @@ module.exports = {
       gridTemplateColumns: {
         "service-cards": "repeat(3,minmax(10em,1fr))",
       },
-      // height: {
-      //   100: "30rem",
-      // },
     },
     container: {
       center: true,
