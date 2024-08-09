@@ -201,38 +201,75 @@
     <span
       class="overlay fixed inset-0 bg-black opacity-0 invisible transition-opacity duration-300 ease-in-out z-30"
     ></span>
-    <main>
+    <main class="pt-20">
       <section
-        class="relative bg-reflectivewear bg-scroll md:bg-fixed bg-cover bg-center bg-no-repeat flex flex-col justify-center items-center h-[100vh]"
+        class="relative bg-reflectivewear bg-scroll md:bg-fixed bg-cover bg-center bg-no-repeat flex justify-center items-center h-[50vh]"
       >
         <div
-          class="absolute w-[90%] lg:container mx-auto text-white flex flex-col justify-center items-center z-20"
+          class="w-[90%] container mx-auto flex flex-col justify-center items-center z-10 text-yellow-500"
         >
           <h1
-            class="capitalize text-3xl md:text-5xl font-semibold tracking-wider mb-8 text-yellow-500"
+            class="capitalize text-2xl font-semibold tracking-wide mb-4"
             data-aos="fade-down"
           >
             reflective wear
           </h1>
-
-          <p
-            class="max-w-prose md:text-2xl tracking-wide text-center font-light mb-4"
-            data-aos="fade-up"
-          >
-            High-visibility clothing designed to reflect light. Crucial for
-            workers in environments with moving vehicles, machinery, or in
-            low-light conditions to prevent accidents and increase safety.
-          </p>
-          <a
-            href="#"
-            class="inline-block p-4 bg-yellow-500 rounded-md font-semibold tracking-wide text-sky-800"
-            data-aos="fade-up"
-            >Contact Us</a
-          >
+          <ul class="breadcrumb" data-aos="fade-up">
+            <li>
+              <a
+                href="/index.html"
+                class="hover:text-sky-700 transition-all duration-150 ease-in-out"
+                >home</a
+              >
+            </li>
+            <li>
+              <a
+                href="/index.html"
+                class="hover:text-sky-700 transition-all duration-150 ease-in-out"
+                >catalogue</a
+              >
+            </li>
+            <li>
+              <a
+                href="/pages/catalogue/reflective-wear.html"
+                class="hover:text-sky-700 transition-all duration-150 ease-in-out"
+                >reflective wear</a
+              >
+            </li>
+          </ul>
         </div>
-        <div class="absolute inset-0 bg-black opacity-50 z-10"></div>
+        <div class="absolute inset-0 bg-black opacity-50 z-0"></div>
       </section>
-      <section class="py-28">
+      <section class="py-10">
+        <div
+          class="w-[90%] lg:w-[80%] container mx-auto flex flex-col lg:flex-row justify-center items-center gap-4"
+        >
+          <div class="lg:w-1/2">
+            <p
+              class="text-lg md:text-3xl font-light text-justify"
+              data-aos="fade-right"
+            >
+              High-visibility clothing designed to reflect light. Crucial for
+              workers in environments with moving vehicles, machinery, or in
+              low-light conditions to prevent accidents and increase safety.
+            </p>
+          </div>
+          <div class="lg:w-1/2">
+            <img
+              src="/assets/imgs/better imgs/reflective-gear/man-wearing-reflective-wear.jpg"
+              alt=""
+              class="rounded-lg h-auto"
+              data-aos="zoom-in"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="py-16">
+        <h2
+          class="capitalize text-4xl text-sky-700 tracking-wide font-semibold text-center mb-8"
+        >
+          reflective wear products
+        </h2>
         <div class="lg:container mx-auto w-[90%] mt-8">
           <div
             class="mx-auto grid grid-cols-2 md:grid-cols-3 grid-rows-2 h-full md:w-[85%] gap-4"
@@ -325,101 +362,78 @@
                 </div>
               </div>
             </div>
-
-            <!-- <div class="w-full max-w-sm mx-auto">
-              <div
-                class="flex flex-col items-center justify-between text-center border-2 border-sky-700 rounded"
-              >
-                <img
-                  src="/assets/imgs/better imgs/Safety-Gumboots-with-Steel-Toe.jpg"
-                  class="h-[200px] object-contain"
-                  alt="safetyboot"
-                />
-                <div
-                  class="w-full min-h-14 bg-gradient-to-bl from-cyan-700 to-blue-700 text-white p-4"
-                >
-                  <p class="font-light tracking-wide">
-                    Safety gumboots with Steel toe
-                  </p>
-                </div>
-              </div>
-            </div>
-
             <div class="w-full max-w-sm mx-auto">
               <div
                 class="flex flex-col items-center justify-between text-center border-2 border-sky-700 rounded"
               >
                 <img
-                  src="/assets/imgs/better imgs/Puncture-resistant-work-boots.jpg"
+                  src="/assets/imgs/better imgs/reflective-gear/rubber-bomber-reflective-jacket.jpg"
                   class="h-[200px] object-contain"
-                  alt="safetyboot"
+                  alt="Reflective Bomber Jacket"
                 />
                 <div
                   class="w-full min-h-14 bg-gradient-to-bl from-cyan-700 to-blue-700 text-white p-4"
                 >
-                  <p class="font-light tracking-wide">
-                    Puncture resistant work boots
+                  <p class="font-light tracking-wide capitalize">
+                    Reflective Bomber Jacket
                   </p>
                 </div>
               </div>
             </div>
-
             <div class="w-full max-w-sm mx-auto">
               <div
                 class="flex flex-col items-center justify-between text-center border-2 border-sky-700 rounded"
               >
                 <img
-                  src="/assets/imgs/better imgs/Slip-on-Leather-Work-Boots-03-300x300.jpg"
+                  src="/assets/imgs/better imgs/reflective-gear/visible-reflective-safety-vest-10-pocket.jpg"
                   class="h-[200px] object-contain"
-                  alt="safetyboot"
+                  alt="10 pocket reflective vest"
                 />
                 <div
                   class="w-full min-h-14 bg-gradient-to-bl from-cyan-700 to-blue-700 text-white p-4"
                 >
-                  <p class="font-light tracking-wide">
-                    Slip-on leather work boots
+                  <p class="font-light tracking-wide capitalize">
+                    10 pocket reflective vest
                   </p>
                 </div>
               </div>
             </div>
-
             <div class="w-full max-w-sm mx-auto">
               <div
                 class="flex flex-col items-center justify-between text-center border-2 border-sky-700 rounded"
               >
                 <img
-                  src="/assets/imgs/better imgs/Steel-Toe-Insulated-Work-Boots-13-300x300.jpg"
+                  src="/assets/imgs/better imgs/reflective-gear/Tuffviz-highway-vest.jpg"
                   class="h-[200px] object-contain"
-                  alt="safetyboot"
+                  alt="10 pocket reflective vest"
                 />
                 <div
                   class="w-full min-h-14 bg-gradient-to-bl from-cyan-700 to-blue-700 text-white p-4"
                 >
-                  <p class="font-light tracking-wide">
-                    Steel toe insulated work boots
+                  <p class="font-light tracking-wide capitalize">
+                    highway vest
                   </p>
                 </div>
               </div>
             </div>
-
             <div class="w-full max-w-sm mx-auto">
               <div
                 class="flex flex-col items-center justify-between text-center border-2 border-sky-700 rounded"
               >
                 <img
-                  src="/assets/imgs/better imgs/Lightweight-waterproof-work-boots.jpg"
+                  src="/assets/imgs/better imgs/reflective-gear/reflective-mesh-vest.jpg"
                   class="h-[200px] object-contain"
-                  alt="safetyboot"
+                  alt="reflective-mesh-vest"
                 />
                 <div
                   class="w-full min-h-14 bg-gradient-to-bl from-cyan-700 to-blue-700 text-white p-4"
                 >
-                  <p class="font-light tracking-wide">
-                    Lightweight waterproof work boots
+                  <p class="font-light tracking-wide capitalize">
+                    reflective-mesh-vest
                   </p>
                 </div>
               </div>
-            </div> -->
+            </div>
           </div>
         </div>
       </section>
