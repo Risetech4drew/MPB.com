@@ -265,3 +265,8 @@ ul.breadcrumb li + li::before {
 .collapse-content.collapsed {
   max-height: 100px;
 }
+
+/* brightness filter */
+.cta-welding {
+  filter: brightness(40%);
+}

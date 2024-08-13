@@ -782,6 +782,10 @@ video {
   margin-bottom: 2rem;
 }
 
+.ml-2 {
+  margin-left: 0.5rem;
+}
+
 .mr-4 {
   margin-right: 1rem;
 }
@@ -798,10 +802,6 @@ video {
   margin-top: 0.5rem;
 }
 
-.mt-3 {
-  margin-top: 0.75rem;
-}
-
 .mt-4 {
   margin-top: 1rem;
 }
@@ -812,18 +812,6 @@ video {
 
 .mt-8 {
   margin-top: 2rem;
-}
-
-.mr-2 {
-  margin-right: 0.5rem;
-}
-
-.ml-2 {
-  margin-left: 0.5rem;
-}
-
-.ml-3 {
-  margin-left: 0.75rem;
 }
 
 .box-border {
@@ -974,10 +962,6 @@ video {
   height: max-content;
 }
 
-.h-5 {
-  height: 1.25rem;
-}
-
 .min-h-14 {
   min-height: 3.5rem;
 }
@@ -1022,8 +1006,8 @@ video {
   width: 100%;
 }
 
-.w-5 {
-  width: 1.25rem;
+.max-w-3xl {
+  max-width: 48rem;
 }
 
 .max-w-prose {
@@ -1032,10 +1016,6 @@ video {
 
 .max-w-sm {
   max-width: 24rem;
-}
-
-.max-w-3xl {
-  max-width: 48rem;
 }
 
 .flex-shrink {
@@ -1960,6 +1940,10 @@ video {
   border-radius: 0.75rem;
 }
 
+.rounded-full {
+  border-radius: 9999px;
+}
+
 .rounded-b {
   border-bottom-right-radius: 0.25rem;
   border-bottom-left-radius: 0.25rem;
@@ -2118,13 +2102,13 @@ video {
   border-color: rgb(12 74 110 / var(--tw-border-opacity));
 }
 
+.border-transparent {
+  border-color: transparent;
+}
+
 .border-yellow-500 {
   --tw-border-opacity: 1;
   border-color: rgb(234 179 8 / var(--tw-border-opacity));
-}
-
-.border-transparent {
-  border-color: transparent;
 }
 
 .bg-\[rgb\(255\2c 0\2c 0\)\] {
@@ -2153,19 +2137,19 @@ video {
 }
 
 .bg-commercial {
-  background-image: url('/assets/imgs/better imgs/commercial-printing/commercial-printing-bg.jpg');
+  background-image: url('/assets/imgs/better-imgs/commercial-printing/commercial-printing-bg.jpg');
 }
 
 .bg-contact {
-  background-image: url('/assets/imgs/better imgs/contact-us/contact-us.jpg');
+  background-image: url('/assets/imgs/better-imgs/contact-us/contact-us.jpg');
 }
 
 .bg-corporate {
-  background-image: url('/assets/imgs/better imgs/corporate-uniforms/corporate-uni-bg.jpg');
+  background-image: url('/assets/imgs/better-imgs/corporate-uniforms/corporate-uni-bg.jpg');
 }
 
 .bg-embroidery {
-  background-image: url('/assets/imgs/better imgs/embroidery/from_boos/IMG-20240730-WA0055.jpg');
+  background-image: url('/assets/imgs/better-imgs/embroidery/from_boos/IMG-20240730-WA0055.jpg');
 }
 
 .bg-footwear {
@@ -2181,11 +2165,11 @@ video {
 }
 
 .bg-handprotection {
-  background-image: url('/assets/imgs/better imgs/Handprotection-hero-bg.webp');
+  background-image: url('/assets/imgs/better-imgs/Handprotection-hero-bg.webp');
 }
 
 .bg-headprotection {
-  background-image: url('/assets/imgs/better imgs/headprotection/head-protection-bg.jpg');
+  background-image: url('/assets/imgs/better-imgs/headprotection/head-protection-bg.jpg');
 }
 
 .bg-hero {
@@ -2193,35 +2177,35 @@ video {
 }
 
 .bg-promo {
-  background-image: url('/assets/imgs/better imgs/promo/Banner-PromotionalProducts.webp');
+  background-image: url('/assets/imgs/better-imgs/promo/Banner-PromotionalProducts.webp');
 }
 
 .bg-reflectivewear {
-  background-image: url('/assets/imgs/better imgs/hero-bg-reflective-wear.jpg');
+  background-image: url('/assets/imgs/better-imgs/hero-bg-reflective-wear.jpg');
 }
 
 .bg-roadsafety {
-  background-image: url('/assets/imgs/better imgs/roadsafety/roadsafety-items.jpg');
+  background-image: url('/assets/imgs/better-imgs/roadsafety/roadsafety-items.jpg');
 }
 
 .bg-safetyfootwear {
-  background-image: url('/assets/imgs/better imgs/safetyfootwearbg.jpg');
+  background-image: url('/assets/imgs/better-imgs/safetyfootwearbg.jpg');
 }
 
 .bg-screenPrinting {
-  background-image: url('/assets/imgs/better imgs/screen-printing/sigma_compressed_0419.jpg');
+  background-image: url('/assets/imgs/better-imgs/screen-printing/sigma_compressed_0419.jpg');
 }
 
 .bg-tools {
-  background-image: url('/assets/imgs/better imgs/Tools/tools-bg.jpg');
+  background-image: url('/assets/imgs/better-imgs/Tools/tools-bg.jpg');
 }
 
 .bg-welding {
-  background-image: url('/assets/imgs/better imgs/welding/welding-bg.jfif');
+  background-image: url('/assets/imgs/better-imgs/welding/welding-bg.jfif');
 }
 
 .bg-workwear {
-  background-image: url('/assets/imgs/better imgs/workwear-bg.webp');
+  background-image: url('/assets/imgs/better-imgs/workwear-bg.webp');
 }
 
 .from-black\/10 {
@@ -2307,6 +2291,14 @@ video {
 
 .bg-right-bottom {
   background-position: right bottom;
+}
+
+.bg-top {
+  background-position: top;
+}
+
+.bg-bottom {
+  background-position: bottom;
 }
 
 .bg-repeat {
@@ -2409,6 +2401,11 @@ video {
   padding-right: 1.25rem;
 }
 
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 .py-10 {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
@@ -2429,6 +2426,11 @@ video {
   padding-bottom: 7rem;
 }
 
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -2437,16 +2439,6 @@ video {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-
-.px-6 {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
-
-.py-3 {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
 }
 
 .pb-28 {
@@ -2477,8 +2469,12 @@ video {
   padding-top: 1.25rem;
 }
 
-.pb-16 {
-  padding-bottom: 4rem;
+.pb-24 {
+  padding-bottom: 6rem;
+}
+
+.pt-16 {
+  padding-top: 4rem;
 }
 
 .text-left {
@@ -2552,6 +2548,11 @@ video {
   line-height: 2.5rem;
 }
 
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -2560,11 +2561,6 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.text-base {
-  font-size: 1rem;
-  line-height: 1.5rem;
 }
 
 .font-bold {
@@ -2581,10 +2577,6 @@ video {
 
 .font-semibold {
   font-weight: 600;
-}
-
-.font-extralight {
-  font-weight: 200;
 }
 
 .uppercase {
@@ -3053,6 +3045,12 @@ video {
   transition-duration: 150ms;
 }
 
+.transition-transform {
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .duration-150 {
   transition-duration: 150ms;
 }
@@ -3417,6 +3415,12 @@ ul.breadcrumb li + li::before {
   max-height: 100px;
 }
 
+/* brightness filter */
+
+.cta-welding {
+  filter: brightness(40%);
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
@@ -3541,6 +3545,11 @@ ul.breadcrumb li + li::before {
   background-color: rgb(234 179 8 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-white:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
 .hover\:font-bold:hover {
   font-weight: 700;
 }
@@ -3550,14 +3559,14 @@ ul.breadcrumb li + li::before {
   color: rgb(3 105 161 / var(--tw-text-opacity));
 }
 
-.hover\:text-yellow-500:hover {
-  --tw-text-opacity: 1;
-  color: rgb(234 179 8 / var(--tw-text-opacity));
-}
-
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.hover\:text-yellow-500:hover {
+  --tw-text-opacity: 1;
+  color: rgb(234 179 8 / var(--tw-text-opacity));
 }
 
 .before\:hover\:text-center:hover::before {
@@ -3596,6 +3605,12 @@ ul.breadcrumb li + li::before {
 
 .hover\:focus\:text-center:focus:hover {
   text-align: center;
+}
+
+.group:hover .group-hover\:scale-110 {
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 @media (min-width: 640px) {
@@ -3658,6 +3673,14 @@ ul.breadcrumb li + li::before {
     width: 85%;
   }
 
+  .md\:w-\[82\%\] {
+    width: 82%;
+  }
+
+  .md\:w-\[83\%\] {
+    width: 83%;
+  }
+
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -3702,6 +3725,16 @@ ul.breadcrumb li + li::before {
 
   .md\:bg-center {
     background-position: center;
+  }
+
+  .md\:py-24 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  .md\:py-28 {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
   }
 
   .md\:text-2xl {
