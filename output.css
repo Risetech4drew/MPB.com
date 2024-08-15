@@ -3751,6 +3751,10 @@ ul.breadcrumb li + li::before {
     margin-left: 0.5rem;
   }
 
+  .lg\:grid {
+    display: grid;
+  }
+
   .lg\:hidden {
     display: none;
   }
