@@ -917,8 +917,8 @@ video {
   height: 11rem;
 }
 
-.h-56 {
-  height: 14rem;
+.h-52 {
+  height: 13rem;
 }
 
 .h-60 {
@@ -927,10 +927,6 @@ video {
 
 .h-64 {
   height: 16rem;
-}
-
-.h-\[100vh\] {
-  height: 100vh;
 }
 
 .h-\[18\.5rem\] {
@@ -2277,10 +2273,6 @@ video {
   background-position: center;
 }
 
-.bg-left {
-  background-position: left;
-}
-
 .bg-right-bottom {
   background-position: right bottom;
 }
@@ -3356,10 +3348,11 @@ body {
 }
 
 .swiper {
-  width: 80%;
+  width: 95%;
   max-width: 1200px;
   height: auto;
   margin: 20px auto;
+  padding: 0 0.5em 0 0.5em;
 }
 
 /* end of swiper styles */
@@ -3594,10 +3587,6 @@ ul.breadcrumb li + li::before {
     height: 12rem;
   }
 
-  .sm\:h-72 {
-    height: 18rem;
-  }
-
   .sm\:h-auto {
     height: auto;
   }
@@ -3711,13 +3700,14 @@ ul.breadcrumb li + li::before {
     background-position: bottom;
   }
 
-  .md\:bg-center {
-    background-position: center;
-  }
-
   .md\:py-28 {
     padding-top: 7rem;
     padding-bottom: 7rem;
+  }
+
+  .md\:py-20 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
 
   .md\:text-2xl {
@@ -3757,6 +3747,10 @@ ul.breadcrumb li + li::before {
 
   .lg\:hidden {
     display: none;
+  }
+
+  .lg\:h-auto {
+    height: auto;
   }
 
   .lg\:w-1\/2 {
@@ -3814,6 +3808,21 @@ ul.breadcrumb li + li::before {
   .lg\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+
+  .lg\:py-28 {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+
+  .lg\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .lg\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
   }
 
   .lg\:shadow-none {

@@ -232,10 +232,11 @@ body {
   object-fit: cover;
 }
 .swiper {
-  width: 80%;
+  width: 95%;
   max-width: 1200px;
   height: auto;
   margin: 20px auto;
+  padding: 0 0.5em 0 0.5em;
 }
 
 /* end of swiper styles */
