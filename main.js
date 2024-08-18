@@ -366,4 +366,13 @@
   document.addEventListener("DOMContentLoaded", () => {
     collapseManager = new CollapseManager();
   });
+
+  // scrolldown
+  const scrollDownArrow = document.getElementById("scrollDownArrow");
+  scrollDownArrow.addEventListener("click", () => {
+    window.scrollTo({
+      top: window.innerHeight,
+      behavior: "smooth",
+    });
+  });
 })();
