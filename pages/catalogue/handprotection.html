@@ -218,14 +218,12 @@
       >
         <div
           class="w-[90%] container mx-auto flex flex-col justify-center items-center z-10 text-yellow-500"
+          data-aos="fade-down"
         >
-          <h1
-            class="capitalize text-2xl font-semibold tracking-wide mb-4"
-            data-aos="fade-down"
-          >
+          <h1 class="capitalize text-2xl font-semibold tracking-wide mb-4">
             Hand protection
           </h1>
-          <ul class="breadcrumb" data-aos="fade-up">
+          <ul class="breadcrumb">
             <li>
               <a
                 href="/index.html"
@@ -250,6 +248,26 @@
           </ul>
         </div>
         <div class="absolute inset-0 bg-black opacity-50 z-0"></div>
+        <div
+          id="scrollDownArrow"
+          class="absolute bottom-8 left-1/2 transform -translate-x-1/2 cursor-pointer"
+          data-aos="fade-down"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-10 w-10 text-blue-500 animate-bounce"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M19 14l-7 7m0 0l-7-7m7 7V3"
+            />
+          </svg>
+        </div>
       </section>
       <section class="py-10">
         <div
@@ -514,5 +532,24 @@
         </div>
       </div>
     </footer>
+    <button
+      id="scrollToTopBtn"
+      class="fixed right-8 bottom-8 bg-blue-500 text-white p-2 rounded-full shadow-lg transition-opacity duration-300 opacity-0 invisible"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-6 w-6"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M5 10l7-7m0 0l7 7m-7-7v18"
+        />
+      </svg>
+    </button>
   </body>
 </html>
