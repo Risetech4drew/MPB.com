@@ -271,3 +271,138 @@ ul.breadcrumb li + li::before {
 .cta-welding {
   filter: brightness(40%);
 }
+/* scroll down arrow */
+.arrow-container {
+  width: 25px;
+  /* cubic-bezier-easing = sine / mehr Beispiele: https://easings.net/ */
+  animation: bounce 1600ms infinite cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  cursor: pointer;
+  height: 20px;
+}
+
+.arrow-down {
+  height: 6px;
+  background: rgb(59, 130, 246);
+  transform: rotate(45deg);
+  transform-origin: 0% 0%;
+  border-radius: 5px;
+}
+.arrow-down:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 100%;
+  border-radius: 5px;
+  background: rgb(59, 130, 246);
+  transform: rotate(-90deg);
+  transform-origin: 0% 100%;
+}
+
+@keyframes bounce {
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+/* 
+ */
+.button.scroll {
+  position: absolute;
+  padding: 8px;
+  background: #111;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 50%;
+  position: relative;
+}
+.scroll-down-arrow {
+  margin: 5px 0 0;
+  position: absolute;
+  left: 13px;
+  top: 7px;
+  -webkit-animation: bounce 1000ms ease infinite;
+  -moz-animation: bounce 1000ms ease infinite;
+  -o-animation: bounce 1000ms ease infinite;
+  animation: bounce 1000ms ease infinite;
+  -webkit-animation-timing-function: cubic-bezier(0.14, 0.75, 0.2, 1.01);
+  -moz-animation-timing-function: cubic-bezier(0.14, 0.75, 0.2, 1.01);
+  -ms-animation-timing-function: cubic-bezier(0.14, 0.75, 0.2, 1.01);
+  animation-timing-function: cubic-bezier(0.14, 0.75, 0.2, 1.01);
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 8px solid #f2f2f2;
+  content: "";
+}
+.button.scroll:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: 0px 0px 3px white, inset 0px 0px 3px white;
+  padding: 2px;
+  z-index: -1;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: block;
+  content: "";
+  -webkit-animation: ring 1s alternate 0s infinite;
+  -moz-animation: ring 1s alternate 0s infinite;
+  -o-animation: ring 1s linear 0s infinite;
+  animation: ring 1s linear 0s infinite;
+}
+
+@-webkit-keyframes bounce {
+  0%,
+  100% {
+    top: 9px;
+    opacity: 0.5;
+  }
+  25% {
+    top: 12px;
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+@keyframes bounce {
+  0%,
+  100% {
+    top: 9px;
+    opacity: 0.5;
+  }
+  25% {
+    top: 12px;
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+@-webkit-keyframes ring {
+  0%,
+  100% {
+    -webkit-transform: scale(1, 1);
+    opacity: 1;
+  }
+  75% {
+    -webkit-transform: scale(1.2, 1.2);
+    opacity: 0.4;
+  }
+}
+@keyframes ring {
+  0%,
+  100% {
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+  75% {
+    transform: scale(1.2, 1.2);
+    opacity: 0.4;
+  }
+}
