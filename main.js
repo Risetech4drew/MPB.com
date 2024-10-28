@@ -368,21 +368,21 @@
   });
 
   // scrolldown
-  const scrollDownArrow = document.getElementById("scrollDownArrow");
-  scrollDownArrow.addEventListener("click", () => {
-    window.scrollTo({
-      top: window.innerHeight,
-      behavior: "smooth",
-    });
-  });
-  // scrollToTop
-  const scrollToTopBtn = document.getElementById("scrollToTopBtn");
-  scrollToTopBtn.addEventListener("click", () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  });
+  // const scrollDownArrow = document.getElementById("scrollDownArrow");
+  // scrollDownArrow.addEventListener("click", () => {
+  //   window.scrollTo({
+  //     top: window.innerHeight,
+  //     behavior: "smooth",
+  //   });
+  // });
+  // // scrollToTop
+  // const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+  // scrollToTopBtn.addEventListener("click", () => {
+  //   window.scrollTo({
+  //     top: 0,
+  //     behavior: "smooth",
+  //   });
+  // });
 
   const toggleScrollToTopBtn = () => {
     if (window.scrollY > 200) {
