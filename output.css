@@ -1006,6 +1006,10 @@ video {
   height: max-content;
 }
 
+.h-\[100vh\] {
+  height: 100vh;
+}
+
 .min-h-14 {
   min-height: 3.5rem;
 }
@@ -2182,6 +2186,11 @@ video {
 .border-yellow-500 {
   --tw-border-opacity: 1;
   border-color: rgb(234 179 8 / var(--tw-border-opacity));
+}
+
+.border-green-900 {
+  --tw-border-opacity: 1;
+  border-color: rgb(20 83 45 / var(--tw-border-opacity));
 }
 
 .bg-\[rgb\(255\2c 0\2c 0\)\] {
