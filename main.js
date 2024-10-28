@@ -375,14 +375,14 @@
   //     behavior: "smooth",
   //   });
   // });
-  // // scrollToTop
-  // const scrollToTopBtn = document.getElementById("scrollToTopBtn");
-  // scrollToTopBtn.addEventListener("click", () => {
-  //   window.scrollTo({
-  //     top: 0,
-  //     behavior: "smooth",
-  //   });
-  // });
+  // scrollToTop
+  const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+  scrollToTopBtn.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  });
 
   const toggleScrollToTopBtn = () => {
     if (window.scrollY > 200) {
